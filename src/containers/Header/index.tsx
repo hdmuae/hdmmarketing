@@ -4,8 +4,8 @@ import Navbar from "../Nav";
 
 const Header: React.FC = () => {
   return (
-    <div className="bg-mobile-header lg:bg-header bg-cover relative h-900">
-      <div className="hidden xl:block absolute top-20 right-0">
+    <div className="h-900 bg-mobile-header lg:bg-header relative bg-cover">
+      <div className="absolute top-20 right-0 hidden xl:block">
         <Image
           height="880"
           width="810"
@@ -14,10 +14,10 @@ const Header: React.FC = () => {
         />
       </div>
 
-      <div className="max-w-screen-2xl h-full m-auto pb-4 px-4 lg:px-8">
+      <div className="m-auto h-full max-w-screen-2xl px-4 pb-4 lg:px-8">
         <Navbar />
 
-        <div className="xl:hidden flex justify-center">
+        <div className="flex justify-center xl:hidden">
           <Image
             height="344"
             width="343"
@@ -25,16 +25,16 @@ const Header: React.FC = () => {
             alt="HDM Marketing services"
           />
         </div>
-        <section className="flex flex-col algin-center">
-          <h1 className="lg:text-2xl text-xl xl:text-left text-center text-white font-sf font-bold leading-tight xl:mt-32 my-6">
+        <section className="algin-center flex flex-col">
+          <h1 className="font-sf my-6 text-center text-xl font-bold leading-tight text-white lg:text-2xl xl:mt-32 xl:text-left">
             Lift your business <br /> to new heights
           </h1>
-          <p className="xl:text-left text-center text-white font-sf lg:text-lg text-md mb-12">
+          <p className="font-sf text-md mb-12 text-center text-white lg:text-lg xl:text-left">
             Digital marketing one stop solution that fits your business.
           </p>
 
-          <div className="flex xl:justify-start justify-center">
-            <button className="align-center text-white text-md rounded-2xl shadow-2xl bg-button py-4 px-16 duration-300 transition-transform hover:scale-110">
+          <div className="flex justify-center xl:justify-start">
+            <button className="align-center bg-button text-md rounded-2xl py-4 px-16 text-white shadow-2xl transition-transform duration-300 hover:scale-110">
               Get Started
             </button>
           </div>

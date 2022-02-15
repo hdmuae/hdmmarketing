@@ -7,7 +7,7 @@ const style: React.CSSProperties = {
 const Copyrights: React.FC = () => {
   return (
     <div style={style}>
-      <p className="text-center text-white text-xs py-4">
+      <p className="py-4 text-center text-xs text-white">
         Copyright © 2021 HDM marketing All Rights Reserved.
       </p>
     </div>

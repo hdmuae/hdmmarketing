@@ -9,9 +9,9 @@ const Contact: React.FC = () => {
   return (
     <section className="lg:hidden">
       <div className="px-6 pt-28 pb-4">
-        <h1 className="text-xl font-fs font-bold mb-4">Contact Us</h1>
+        <h1 className="font-fs mb-4 text-xl font-bold">Contact Us</h1>
 
-        <p className="text-sm text-description font-inter font-md mb-8">
+        <p className="font-md font-inter text-description mb-8 text-sm">
           Whether you have a question about our services, projects, pricing or
           anything else - our team is looking forward to all your questions.
         </p>
@@ -19,23 +19,23 @@ const Contact: React.FC = () => {
 
       <div style={style}>
         <div className="px-6 py-12">
-          <h1 className="mb-2 font-inter">Your name</h1>
-          <input className="w-full h-16 shadow-md rounded-2xl mb-4 outline-none" />
+          <h1 className="font-inter mb-2">Your name</h1>
+          <input className="mb-4 h-16 w-full rounded-2xl shadow-md outline-none" />
 
           <h1 className="mb-2">Your contact number</h1>
-          <input className="w-full h-16 shadow-md rounded-2xl mb-4 outline-none" />
+          <input className="mb-4 h-16 w-full rounded-2xl shadow-md outline-none" />
 
           <h1 className="mb-2">Your email</h1>
-          <input className="w-full h-16 shadow-md rounded-2xl mb-4 outline-none" />
+          <input className="mb-4 h-16 w-full rounded-2xl shadow-md outline-none" />
 
           <h1 className="mb-2">Your Message</h1>
           <textarea
             rows={5}
-            className="w-full shadow-md rounded-2xl mb-4 outline-none"
+            className="mb-4 w-full rounded-2xl shadow-md outline-none"
           />
 
           <div className="flex justify-center">
-            <button className="text-white rounded-2xl bg-button py-4 px-16">
+            <button className="bg-button rounded-2xl py-4 px-16 text-white">
               Submit
             </button>
           </div>

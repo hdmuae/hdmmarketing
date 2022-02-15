@@ -6,14 +6,14 @@ const Navbar: React.FC = () => {
     <nav className="flex justify-between pt-8 pb-16 lg:pb-12 ">
       <Image height="37" width="150" src="/svg/logo.svg" alt="HDM Logo" />
 
-      <div className="hidden lg:flex w-1/2 justify-between">
-        <a href="#about" className="text-white text-sm hover:text-button">
+      <div className="hidden w-1/2 justify-between lg:flex">
+        <a href="#about" className="hover:text-button text-sm text-white">
           About us
         </a>
-        <a href="#services" className="text-white text-sm hover:text-button">
+        <a href="#services" className="hover:text-button text-sm text-white">
           Services
         </a>
-        <a href="#ourwork" className="text-white text-sm hover:text-button">
+        <a href="#ourwork" className="hover:text-button text-sm text-white">
           Our work
         </a>
         {/* <a href="#ourteam" className="text-white text-sm hover:text-button">
@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
           <a href="#blog" className="text-white text-sm hover:text-button">
           Blog
         </a> */}
-        <a href="#contact" className="text-white text-sm hover:text-button">
+        <a href="#contact" className="hover:text-button text-sm text-white">
           Contact us
         </a>
       </div>

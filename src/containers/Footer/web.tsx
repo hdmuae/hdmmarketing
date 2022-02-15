@@ -11,14 +11,14 @@ const Footer: React.FC = () => {
   return (
     <section
       id="contact"
-      className="max-w-screen-2xl hidden lg:flex mx-auto justify-between py-20 px-4 lg:px-8"
+      className="mx-auto hidden max-w-screen-2xl justify-between py-20 px-4 lg:flex lg:px-8"
     >
       <div className="w-1/2 pb-4">
-        <h1 className="text-xl lg:text-2xl font-fs font-bold mb-4">
+        <h1 className="font-fs mb-4 text-xl font-bold lg:text-2xl">
           Contact Us
         </h1>
 
-        <p className="text-lg text-description font-inter font-md mb-8 leading-tight">
+        <p className="font-md font-inter text-description mb-8 text-lg leading-tight">
           Whether you have a question about our services, projects, pricing or
           anything else - our team is looking forward to all your questions.
         </p>
@@ -38,42 +38,42 @@ const Footer: React.FC = () => {
             </p>
           </div>
 
-          <div className="flex mb-3">
-            <h1 className="font-bold mr-3">Mob./WhatsApp:</h1>
+          <div className="mb-3 flex">
+            <h1 className="mr-3 font-bold">Mob./WhatsApp:</h1>
             <p className="text-description">+971 50 509 5699</p>
           </div>
 
-          <div className="flex mb-3">
-            <h1 className="font-bold mr-3">Tel.: </h1>
+          <div className="mb-3 flex">
+            <h1 className="mr-3 font-bold">Tel.: </h1>
             <p className="text-description">+971 4 528 14 05</p>
           </div>
 
           <div className="flex">
-            <h1 className="font-bold mr-3">Mail us:</h1>
+            <h1 className="mr-3 font-bold">Mail us:</h1>
             <p className="text-description">info@hdmuae.com</p>
           </div>
         </div>
       </div>
 
       <div style={style} className="h-full w-2/5">
-        <div className="w-11/12 mx-auto py-12 px-16">
-          <h1 className="mb-2 font-inter">Your name</h1>
-          <input className="w-full h-16 shadow-lg rounded-2xl mb-4 px-4 outline-none" />
+        <div className="mx-auto w-11/12 py-12 px-16">
+          <h1 className="font-inter mb-2">Your name</h1>
+          <input className="mb-4 h-16 w-full rounded-2xl px-4 shadow-lg outline-none" />
 
           <h1 className="mb-2">Your contact number</h1>
-          <input className="w-full h-16 shadow-lg rounded-2xl mb-4 px-4 outline-none" />
+          <input className="mb-4 h-16 w-full rounded-2xl px-4 shadow-lg outline-none" />
 
           <h1 className="mb-2">Your email</h1>
-          <input className="w-full h-16 shadow-lg rounded-2xl mb-4 px-4 outline-none" />
+          <input className="mb-4 h-16 w-full rounded-2xl px-4 shadow-lg outline-none" />
 
           <h1 className="mb-2">Your Message</h1>
           <textarea
             rows={7}
-            className="w-full shadow-lg rounded-2xl mb-8 p-4 outline-none"
+            className="mb-8 w-full rounded-2xl p-4 shadow-lg outline-none"
           />
 
           <div className="flex justify-center">
-            <button className="text-white rounded-2xl bg-button py-4 px-16">
+            <button className="bg-button rounded-2xl py-4 px-16 text-white">
               Submit
             </button>
           </div>
