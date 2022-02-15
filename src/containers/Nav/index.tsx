@@ -7,6 +7,9 @@ const Navbar: React.FC = () => {
       <Image height="37" width="150" src="/svg/logo.svg" alt="HDM Logo" />
 
       <div className="hidden lg:flex w-1/2 justify-between">
+        <a href="#contact" className="text-white text-sm hover:text-button">
+          Contact us
+        </a>
         <a href="#about" className="text-white text-sm hover:text-button">
           About us
         </a>
@@ -22,9 +25,6 @@ const Navbar: React.FC = () => {
         <a href="#blog" className="text-white text-sm hover:text-button">
           Blog
         </a> */}
-        <a href="#contact" className="text-white text-sm hover:text-button">
-          Contact us
-        </a>
       </div>
       <div className="lg:hidden">
         <Image height="22" width="30" src="/svg/menu.svg" alt="Burger Menu" />
