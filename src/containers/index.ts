@@ -1,0 +1,10 @@
+export { default as Nav } from "./Nav";
+export { default as About } from "./About";
+export { default as Footer } from "./Footer/web";
+export { default as Header } from "./Header";
+export { default as Contact } from "./Contact";
+export { default as OurWork } from "./OurWork";
+export { default as Services } from "./Services";
+export { default as MobileFooter } from "./Footer";
+export { default as Announcement } from "./Announcement";
+export { default as Copyrights } from "./Footer/copyrights";

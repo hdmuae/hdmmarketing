@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
   return (
     <section
       id="#contact"
-      className="hidden lg:flex max-w-screen-2xl mx-auto justify-between py-20"
+      className="max-w-screen-2xl hidden lg:flex mx-auto justify-between py-20 px-4 lg:px-8"
     >
       <div className="w-1/2 pb-4">
         <h1 className="text-xl lg:text-2xl font-fs font-bold mb-4">

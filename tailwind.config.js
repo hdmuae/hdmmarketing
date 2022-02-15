@@ -30,8 +30,11 @@ module.exports = {
         description: "#616161",
         button: "#2EA8AF",
         secondary: "#8768C0",
-        gradient: "#D8D6E3",
-        gradient1: "#A987C3",
+        card: "#D6DAED",
+        "button-gradient": "#D8D6E3",
+        "button-gradient1": "#A987C3",
+        "card-gradient": "rgba(214, 218, 237, 0.5)",
+        "card-gradient1": "rgba(214, 218, 237, 0.185)",
       },
       backgroundImage: {
         header: "url('/images/header-background.png')",

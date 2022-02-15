@@ -21,7 +21,7 @@ const Card: React.FC<CardProps> = ({ index, image, title, description }) => {
           <Image width="585" height="400" src={image} alt="Project preview" />
         </div>
         <button
-          className={`text-sm text-white rounded-2xl py-3 px-8 border-white shadow-lg border-2 bg-gradient-to-r from-gradient to-gradient1 absolute -bottom-4 right-0 left-0 ${
+          className={`text-sm text-white rounded-2xl py-3 px-8 border-white shadow-lg border-2 bg-gradient-to-r from-button-gradient to-button-gradient1 absolute -bottom-4 right-0 left-0 ${
             index % 2 == 0
               ? "md:w-52 md:left-auto md:bottom-6 md:right-12"
               : "md:w-52 md:right-auto md:bottom-6 md:left-12"

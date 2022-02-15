@@ -10,7 +10,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ icon, title, description }) => {
   return (
-    <div className="mb-12 lg:w-30">
+    <div className="mb-4 lg:w-1/3 p-6 rounded-3xl hover:bg-gradient-to-r from-card-gradient to-card-gradient1">
       <div className="flex items-center mb-4">
         <div className="w-1/5">
           <Image src={icon} width="60" height="60" alt="UI/UX design icon" />
