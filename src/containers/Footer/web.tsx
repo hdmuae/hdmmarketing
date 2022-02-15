@@ -10,7 +10,7 @@ const style: React.CSSProperties = {
 const Footer: React.FC = () => {
   return (
     <section
-      id="#contact"
+      id="contact"
       className="max-w-screen-2xl hidden lg:flex mx-auto justify-between py-20 px-4 lg:px-8"
     >
       <div className="w-1/2 pb-4">
