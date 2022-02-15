@@ -22,18 +22,13 @@
   src: url("/fonts/SFPRODISPLAYMEDIUM.OTF") format("woff");
 }
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  scroll-behavior: smooth;
-}
+@layer base {
+  html,
+  body {
+    @apply m-0  scroll-smooth p-0;
+  }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+  a {
+    @apply text-inherit outline-none;
+  }
 }
