@@ -41,6 +41,7 @@ module.exports = {
         "mobile-header": "url('/images/mobile/header-background.png')",
         banner: "url(/images/banner.png)",
         "mobile-banner": "url(/images/mobile/banner.png)",
+        portfolio: "url(/images/background_portfolio.png)",
       },
       screens: {
         base: "0px",

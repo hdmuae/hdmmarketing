@@ -1,5 +1,9 @@
 import * as React from "react";
 import Image from "next/image";
+import emailjs from "emailjs-com";
+import { useForm } from "react-hook-form";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.min.css";
 
 const style: React.CSSProperties = {
   borderRadius: "24px",
@@ -8,6 +12,43 @@ const style: React.CSSProperties = {
 };
 
 const Footer: React.FC = () => {
+  const { register, handleSubmit, reset } = useForm();
+
+  const toastifySuccess = () => {
+    toast.success("Message sent successfully!", {
+      position: "bottom-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: false,
+      className: "submit-feedback success",
+      toastId: "notifyToast",
+    });
+  };
+
+  const onSubmit = async (data: any) => {
+    const { name, email, number, message } = data;
+
+    try {
+      const templateParams = {
+        name,
+        email,
+        number,
+        message,
+      };
+      await emailjs.send(
+        "service_m9x0oik",
+        "template_z3zmvkb",
+        templateParams,
+        "user_bDIEmwy6qfjsQW9OkuxdP"
+      );
+      reset();
+      toastifySuccess();
+    } catch (e) {
+      console.log(e);
+    }
+  };
   return (
     <section
       id="contact"
@@ -56,19 +97,32 @@ const Footer: React.FC = () => {
       </div>
 
       <div style={style} className="h-full w-2/5">
-        <div className="mx-auto w-11/12 py-12 px-16">
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className="mx-auto w-11/12 py-12 px-16"
+        >
           <h1 className="font-inter mb-2">Your name</h1>
-          <input className="mb-4 h-16 w-full rounded-2xl px-4 shadow-lg outline-none" />
+          <input
+            {...register("name")}
+            className="mb-4 h-16 w-full rounded-2xl px-4 shadow-lg outline-none"
+          />
 
           <h1 className="mb-2">Your contact number</h1>
-          <input className="mb-4 h-16 w-full rounded-2xl px-4 shadow-lg outline-none" />
+          <input
+            {...register("number")}
+            className="mb-4 h-16 w-full rounded-2xl px-4 shadow-lg outline-none"
+          />
 
           <h1 className="mb-2">Your email</h1>
-          <input className="mb-4 h-16 w-full rounded-2xl px-4 shadow-lg outline-none" />
+          <input
+            {...register("email")}
+            className="mb-4 h-16 w-full rounded-2xl px-4 shadow-lg outline-none"
+          />
 
           <h1 className="mb-2">Your Message</h1>
           <textarea
             rows={7}
+            {...register("message")}
             className="mb-8 w-full rounded-2xl p-4 shadow-lg outline-none"
           />
 
@@ -77,7 +131,8 @@ const Footer: React.FC = () => {
               Submit
             </button>
           </div>
-        </div>
+        </form>
+        <ToastContainer />
       </div>
     </section>
   );
