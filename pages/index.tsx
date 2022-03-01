@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import React from "react";
 import {
   About,
   Header,
@@ -17,18 +18,14 @@ const Home: NextPage = () => {
     <div>
       <Head>
         <title>HDM Marketing</title>
-        <meta name="description" content="HDM Marketing Company profile" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <Header />
-        <About />
-        <Services />
-        <OurWork />
-        <Announcement />
-        <Contact />
-      </main>
+      <Header />
+      <About />
+      <Services />
+      <OurWork />
+      <Announcement />
+      <Contact />
 
       <Footer />
       <MobileFooter />
