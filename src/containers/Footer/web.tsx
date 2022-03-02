@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
   return (
     <section
       id="contact"
-      className="mx-auto hidden max-w-screen-2xl justify-between py-20 px-4 lg:flex lg:px-8"
+      className="max-w-default mx-auto hidden w-4/5 justify-between py-20 px-6 lg:flex lg:px-0"
     >
       <div className="w-1/2 pb-4">
         <h1 className="font-fs mb-4 text-xl font-bold lg:text-2xl">
@@ -69,37 +69,71 @@ const Footer: React.FC = () => {
 
         <div className="flex flex-col py-4">
           <div className="mb-3">
-            <h1 className="font-bold">Locations:</h1>
-            <p className="text-description">
-              Al Saqr Business Tower, 91 Sheikh Zayed Rd, Trade Centre DIFC -
-              Dubai
-            </p>
-            <p className="text-description">
-              Badenerstrasse 434, 8004 Zürich, Switzerland
-            </p>
+            <div className="mb-3 flex">
+              <Image
+                src="/svg/location_icon.svg"
+                width="35"
+                height="20"
+                alt="Location icon"
+              />
+
+              <p className="text-description ml-3">
+                Al Saqr Business Tower, 91 Sheikh Zayed Rd, Trade Centre DIFC -
+                Dubai
+              </p>
+            </div>
+
+            <div className="flex">
+              <div className="invisible">
+                <Image
+                  src="/svg/location_icon.svg"
+                  width="35"
+                  height="20"
+                  alt="Location icon"
+                />
+              </div>
+              <p className="text-description ml-3">
+                Badenerstrasse 434, 8004 Zürich, Switzerland
+              </p>
+            </div>
           </div>
 
           <div className="mb-3 flex">
-            <h1 className="mr-3 font-bold">Mob./WhatsApp:</h1>
-            <p className="text-description">+971 50 509 5699</p>
+            <Image
+              src="/svg/phone_icon.svg"
+              width="30"
+              height="20"
+              alt="Location icon"
+            />
+            <p className="text-description ml-3">+971 50 509 5699</p>
           </div>
 
           <div className="mb-3 flex">
-            <h1 className="mr-3 font-bold">Tel.: </h1>
-            <p className="text-description">+971 4 528 14 05</p>
+            <Image
+              src="/svg/tel_icon.svg"
+              width="30"
+              height="20"
+              alt="Location icon"
+            />
+            <p className="text-description ml-3">+971 4 528 14 05</p>
           </div>
 
           <div className="flex">
-            <h1 className="mr-3 font-bold">Mail us:</h1>
-            <p className="text-description">info@hdmuae.com</p>
+            <Image
+              src="/svg/mail_icon.svg"
+              width="30"
+              height="20"
+              alt="Location icon"
+            />
+            <p className="text-description ml-3">info@hdmuae.com</p>
           </div>
         </div>
       </div>
 
-      <div style={style} className="h-full w-2/5">
+      <div style={style} className="h-full w-[47%]">
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="mx-auto w-11/12 py-12 px-16"
+          className="mx-auto py-12 md:px-8 xl:px-16"
         >
           <h1 className="font-inter mb-2">Your name</h1>
           <input

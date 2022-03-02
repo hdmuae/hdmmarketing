@@ -12,7 +12,7 @@ const Services: React.FC = () => {
   return (
     <section
       id="services"
-      className="mx-auto max-w-screen-2xl px-4 pt-20 lg:px-8"
+      className="max-w-default mx-auto w-full px-6 pt-20 md:w-4/5 md:px-0"
     >
       <h1 className="font-fs mb-8 text-xl font-bold lg:text-2xl">Services</h1>
 

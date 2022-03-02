@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="flex justify-between pt-8 pb-16 lg:pb-12 ">
+    <nav className="flex justify-between pt-8 pb-16 lg:pb-12">
       <Image height="37" width="150" src="/svg/logo.svg" alt="HDM Logo" />
 
       <div className="hidden w-1/2 justify-between lg:flex">

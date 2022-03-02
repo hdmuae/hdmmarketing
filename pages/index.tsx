@@ -18,6 +18,11 @@ const Home: NextPage = () => {
     <div>
       <Head>
         <title>HDM Marketing</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+          name="description"
+          content="HDM Company Profile, Software and Marketing Solutions"
+        />
       </Head>
 
       <Header />

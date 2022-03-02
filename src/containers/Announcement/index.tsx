@@ -5,7 +5,7 @@ const Announcement: React.FC = () => {
   return (
     <section
       id="announcement"
-      className="h-660 bg-mobile-banner lg:h-450 lg:bg-banner relative flex items-center bg-cover"
+      className="bg-mobile-banner lg:bg-banner relative flex h-[660px] items-center bg-cover lg:h-[450px]"
     >
       <div className="absolute right-32 -top-12 hidden lg:block">
         <Image width="305" height="156" src="/images/content.png" alt="" />
@@ -57,14 +57,14 @@ const Announcement: React.FC = () => {
         />
       </div>
       <div className="mx-auto w-11/12">
-        <h1 className="font-sf mb-8 text-center text-xl font-bold leading-tight text-white">
+        <h1 className="font-sf mb-8 text-center text-[48px] font-bold leading-tight text-white">
           We share the things we like and the <br /> stuff that we are working
           on
         </h1>
 
         <div className="flex justify-center">
-          <button className="bg-button rounded-2xl py-4 px-16 text-white transition-transform duration-300 hover:scale-110">
-            Lets go
+          <button className="bg-button rounded-2xl py-4 px-16 text-sm text-white transition-transform duration-300 hover:scale-110">
+            {`Let's go`}
           </button>
         </div>
       </div>

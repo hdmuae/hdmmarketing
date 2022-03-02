@@ -44,7 +44,7 @@ const Card: React.FC<CardProps> = ({
       </div>
     </div>
   ) : (
-    <div className="from-card-gradient to-card-gradient1 mb-4 rounded-3xl p-6 hover:bg-gradient-to-r lg:w-1/3">
+    <div className="from-card-gradient to-card-gradient1 mb-4 rounded-3xl p-6 hover:bg-gradient-to-r md:w-1/2 lg:w-1/3">
       <div className="mb-4 flex items-center">
         <div className="w-1/5">
           <Image src={image} width="60" height="60" alt="UI/UX design icon" />

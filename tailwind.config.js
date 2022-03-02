@@ -6,13 +6,8 @@ module.exports = {
   ],
   theme: {
     extend: {
-      height: {
-        900: "900px",
-        660: "660px",
-        450: "450px",
-      },
-      width: {
-        30: "30%",
+      maxWidth: {
+        default: "1366px",
       },
       fontFamily: {
         sf: "SF Pro Display",
@@ -57,9 +52,6 @@ module.exports = {
 
         xl: "1280px",
         // => @media (min-width: 1280px) { ... }
-
-        "2xl": "1440px",
-        // => @media (min-width: 1536px) { ... }
       },
     },
   },

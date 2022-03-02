@@ -7,19 +7,19 @@
 @font-face {
   font-family: "SF Pro Display";
   font-weight: "Bold";
-  src: url("/fonts/SFPRODISPLAYBOLD.OTF") format("woff");
+  src: url("../public/fonts/SFPRODISPLAYBOLD.OTF") format("woff");
 }
 
 @font-face {
   font-family: "SF Pro Display";
   font-weight: "Regular";
-  src: url("/fonts/SFPRODISPLAYREGULAR.OTF") format("woff");
+  src: url("../public/fonts/SFPRODISPLAYREGULAR.OTF") format("woff");
 }
 
 @font-face {
   font-family: "SF Pro Display";
   font-weight: "Medium";
-  src: url("/fonts/SFPRODISPLAYMEDIUM.OTF") format("woff");
+  src: url("../public/fonts/SFPRODISPLAYMEDIUM.OTF") format("woff");
 }
 
 @layer base {

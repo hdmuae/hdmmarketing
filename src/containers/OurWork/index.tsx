@@ -6,7 +6,7 @@ import Card from "../../components/Card";
 const OurWork: React.FC = () => {
   return (
     <section id="ourwork" className="bg-portfolio bg-cover">
-      <div className="mx-auto max-w-screen-2xl py-12 px-4 lg:px-8">
+      <div className="max-w-default mx-auto w-full py-12 px-6 md:w-4/5 lg:px-0">
         <div className="flex items-center justify-between">
           <h1 className="font-fs mb-8 text-xl font-bold lg:text-2xl">
             Our work
