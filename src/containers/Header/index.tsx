@@ -3,18 +3,38 @@ import Image from "next/image";
 import Navbar from "../Nav";
 
 const shadow: React.CSSProperties = {
-  boxShadow: " -10px 19px 20px rgba(43, 9, 120, 0.35)",
+  boxShadow: "-10px 19px 20px rgba(43, 9, 120, 0.35)",
 };
 
 const Header: React.FC = () => {
   return (
-    <div className="bg-mobile-header lg:bg-header relative h-[900px] bg-cover lg:h-[750px] xl:h-[900px]">
+    <div className="relative h-[900px] bg-cover lg:h-[750px] xl:h-[900px]">
+      <div className="hidden md:block">
+        <Image
+          layout="fill"
+          objectFit="cover"
+          src="/images/header-background.png"
+          alt="HDM Marketing services"
+          quality="100"
+        />
+      </div>
+
+      <div className="md:hidden">
+        <Image
+          layout="fill"
+          objectFit="cover"
+          src="/images/mobile/header-background.png"
+          alt="HDM Marketing services"
+          quality="100"
+        />
+      </div>
       <div className="absolute right-0 z-10 hidden md:w-[610px] lg:top-32 lg:block lg:w-[710] xl:top-20 xl:w-[810px]">
         <Image
           height="880"
           width="810"
           src="/images/image_first_block.png"
           alt="HDM Marketing services"
+          quality="100"
         />
       </div>
 
@@ -27,6 +47,7 @@ const Header: React.FC = () => {
             width="343"
             src="/images/mobile/image_first_block.png"
             alt="HDM Marketing services"
+            quality="100"
           />
         </div>
         <section className="algin-center flex flex-col">

@@ -23,6 +23,7 @@ const About: React.FC = () => {
           layout="responsive"
           src="/svg/mobile/about-us.svg"
           alt="About us"
+          quality="100"
         />
       </div>
     </section>

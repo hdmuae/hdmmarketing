@@ -3,7 +3,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <Html>
+    <Html lang="en">
       <Head>
         <meta name="description" content="HDM Marketing Company profile" />
         <link rel="icon" href="/favicon.ico" />

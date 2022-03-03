@@ -5,27 +5,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 @font-face {
-  font-family: "SF Pro Display";
+  display: "swap";
   font-weight: "Bold";
+  font-family: "SF Pro Display";
   src: url("../public/fonts/SFPRODISPLAYBOLD.OTF") format("woff");
 }
 
 @font-face {
-  font-family: "SF Pro Display";
+  display: "swap";
   font-weight: "Regular";
+  font-family: "SF Pro Display";
   src: url("../public/fonts/SFPRODISPLAYREGULAR.OTF") format("woff");
 }
 
 @font-face {
-  font-family: "SF Pro Display";
+  display: "swap";
   font-weight: "Medium";
+  font-family: "SF Pro Display";
   src: url("../public/fonts/SFPRODISPLAYMEDIUM.OTF") format("woff");
 }
 
 @layer base {
   html,
   body {
-    @apply m-0  scroll-smooth p-0;
+    @apply m-0 scroll-smooth p-0;
   }
 
   a {
