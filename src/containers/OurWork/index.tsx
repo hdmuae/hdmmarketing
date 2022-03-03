@@ -5,7 +5,15 @@ import Card from "../../components/Card";
 
 const OurWork: React.FC = () => {
   return (
-    <section id="ourwork" className="bg-portfolio bg-cover">
+    <section id="ourwork" className="relative">
+      <div>
+        <Image
+          layout="fill"
+          src="/images/background_portfolio.png"
+          alt="HDM portfolio background"
+        />
+      </div>
+
       <div className="max-w-default mx-auto w-full py-12 px-6 md:w-4/5 lg:px-0">
         <div className="flex items-center justify-between">
           <h1 className="font-fs mb-8 text-xl font-bold lg:text-2xl">
