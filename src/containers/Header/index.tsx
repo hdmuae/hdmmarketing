@@ -18,7 +18,7 @@ const Header: React.FC = () => {
         />
       </div>
 
-      <div className="max-w-default relative z-30 m-auto h-full w-4/5 px-4 pb-4 md:px-0">
+      <div className="max-w-default relative z-30 m-auto h-full w-4/5 pb-4">
         <Navbar />
 
         <div className="flex justify-center lg:hidden">
