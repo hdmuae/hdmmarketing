@@ -1,4 +1,8 @@
 import * as React from "react";
+import emailjs from "emailjs-com";
+import { useForm } from "react-hook-form";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.min.css";
 
 const style: React.CSSProperties = {
   background:
@@ -6,6 +10,44 @@ const style: React.CSSProperties = {
 };
 
 const Contact: React.FC = () => {
+  const { register, handleSubmit, reset } = useForm();
+
+  const toastifySuccess = () => {
+    toast.success("Message sent successfully!", {
+      position: "bottom-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: false,
+      className: "submit-feedback success",
+      toastId: "notifyToast",
+    });
+  };
+
+  const onSubmit = async (data: any) => {
+    const { name, email, number, message } = data;
+
+    try {
+      const templateParams = {
+        name,
+        email,
+        number,
+        message,
+      };
+      await emailjs.send(
+        "service_m9x0oik",
+        "template_z3zmvkb",
+        templateParams,
+        "user_bDIEmwy6qfjsQW9OkuxdP"
+      );
+      reset();
+      toastifySuccess();
+    } catch (e) {
+      console.log(e);
+    }
+  };
+
   return (
     <section className="lg:hidden">
       <div className="px-6 pt-28 pb-4">
@@ -18,20 +60,30 @@ const Contact: React.FC = () => {
       </div>
 
       <div style={style}>
-        <div className="px-6 py-12">
+        <form onSubmit={handleSubmit(onSubmit)} className="px-6 py-12">
           <h1 className="font-inter mb-2">Your name</h1>
-          <input className="mb-4 h-16 w-full rounded-2xl shadow-md outline-none" />
+          <input
+            {...register("name")}
+            className="mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
+          />
 
           <h1 className="mb-2">Your contact number</h1>
-          <input className="mb-4 h-16 w-full rounded-2xl shadow-md outline-none" />
+          <input
+            {...register("number")}
+            className="mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
+          />
 
           <h1 className="mb-2">Your email</h1>
-          <input className="mb-4 h-16 w-full rounded-2xl shadow-md outline-none" />
+          <input
+            {...register("email")}
+            className="mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
+          />
 
           <h1 className="mb-2">Your Message</h1>
           <textarea
             rows={5}
-            className="mb-4 w-full rounded-2xl shadow-md outline-none"
+            {...register("message")}
+            className="mb-4 w-full rounded-2xl px-4 shadow-md outline-none"
           />
 
           <div className="flex justify-center">
@@ -39,7 +91,8 @@ const Contact: React.FC = () => {
               Submit
             </button>
           </div>
-        </div>
+        </form>
+        <ToastContainer />
       </div>
     </section>
   );
