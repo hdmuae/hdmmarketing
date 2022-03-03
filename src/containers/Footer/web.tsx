@@ -77,10 +77,15 @@ const Footer: React.FC = () => {
                 alt="Location icon"
               />
 
-              <p className="text-description ml-3">
+              <a
+                href="https://goo.gl/maps/TzvGDivQKDD1YdVx9"
+                target="_blank"
+                rel="noreferrer"
+                className="text-description ml-3"
+              >
                 Al Saqr Business Tower, 91 Sheikh Zayed Rd, Trade Centre DIFC -
                 Dubai
-              </p>
+              </a>
             </div>
 
             <div className="flex">
@@ -92,9 +97,14 @@ const Footer: React.FC = () => {
                   alt="Location icon"
                 />
               </div>
-              <p className="text-description ml-3">
+              <a
+                href="https://goo.gl/maps/fDy56hcaguy6LCqr8"
+                target="_blank"
+                rel="noreferrer"
+                className="text-description ml-3"
+              >
                 Badenerstrasse 434, 8004 Zürich, Switzerland
-              </p>
+              </a>
             </div>
           </div>
 
@@ -105,7 +115,9 @@ const Footer: React.FC = () => {
               height="20"
               alt="Location icon"
             />
-            <p className="text-description ml-3">+971 50 509 5699</p>
+            <a href="tel:+971 50 509 5699" className="text-description ml-3">
+              +971 50 509 5699
+            </a>
           </div>
 
           <div className="mb-3 flex">
@@ -115,7 +127,9 @@ const Footer: React.FC = () => {
               height="20"
               alt="Location icon"
             />
-            <p className="text-description ml-3">+971 4 528 14 05</p>
+            <a href="tel:+971 4 528 14 05" className="text-description ml-3">
+              +971 4 528 14 05
+            </a>
           </div>
 
           <div className="flex">
@@ -125,7 +139,9 @@ const Footer: React.FC = () => {
               height="20"
               alt="Location icon"
             />
-            <p className="text-description ml-3">info@hdmuae.com</p>
+            <a href="mailto:info@hdmuae.com" className="text-description ml-3">
+              info@hdmuae.com
+            </a>
           </div>
         </div>
       </div>
