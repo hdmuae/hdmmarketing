@@ -17,6 +17,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       router.events.off("routeChangeComplete", handleRouteChange);
     };
   }, [router.events]);
+
   return (
     <>
       {/* Global Site Tag (gtag.js) - Google Analytics */}

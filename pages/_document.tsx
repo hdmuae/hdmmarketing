@@ -5,7 +5,10 @@ const Home = () => {
   return (
     <Html lang="en">
       <Head>
-        <meta name="description" content="HDM Marketing Company profile" />
+        <meta
+          name="description"
+          content="HDM Company Profile, Software and Marketing Solutions"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

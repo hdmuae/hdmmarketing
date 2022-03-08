@@ -1,4 +1,5 @@
 import * as React from "react";
+import Head from "next/head";
 import {
   Contact,
   Copyrights,
@@ -10,14 +11,15 @@ import {
 
 const Portfolio: React.FC = () => {
   return (
-    <section>
+    <>
+      <Head>Portfolio - HDM Marketing</Head>
       <Header variant="horizontal" title="Our Case Studies" />
       <Work />
       <Contact />
       <Footer />
       <MobileFooter />
       <Copyrights />
-    </section>
+    </>
   );
 };
 

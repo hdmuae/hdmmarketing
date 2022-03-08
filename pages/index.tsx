@@ -15,20 +15,18 @@ import {
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <>
       <Head>
-        <title>HDM Marketing</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta
-          name="description"
-          content="HDM Company Profile, Software and Marketing Solutions"
-        />
+
+        <title>HDM Marketing Landing Page</title>
       </Head>
 
       <Header
         variant="vertical"
         title={`Lift your business \n to new heights`}
       />
+
       <About />
       <Services />
       <OurWork />
@@ -38,7 +36,7 @@ const Home: NextPage = () => {
       <Footer />
       <MobileFooter />
       <Copyrights />
-    </div>
+    </>
   );
 };
 
