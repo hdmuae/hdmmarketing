@@ -25,7 +25,10 @@ const Home: NextPage = () => {
         />
       </Head>
 
-      <Header />
+      <Header
+        variant="vertical"
+        title={`Lift your business \n to new heights`}
+      />
       <About />
       <Services />
       <OurWork />

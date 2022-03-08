@@ -2,6 +2,7 @@ import * as React from "react";
 import Image from "next/image";
 import { data } from "./data";
 import Card from "../../components/Card";
+import Link from "next/link";
 
 const OurWork: React.FC = () => {
   return (
@@ -19,14 +20,18 @@ const OurWork: React.FC = () => {
           <h1 className="font-fs mb-8 text-xl font-bold lg:text-2xl">
             Our work
           </h1>
-          <h2 className="font-inter text-button hidden text-lg font-medium lg:block">
-            <span className="mr-3 cursor-pointer">See all projects</span>
+          <h2 className="font-inter text-button z-10 hidden cursor-pointer text-lg font-medium lg:block">
+            <Link href="/portfolio">
+              <a className="mr-3 cursor-pointer">See all projects</a>
+            </Link>
             <Image width="12" height="18px" src="/svg/arrow.svg" alt="arrow" />
           </h2>
         </div>
-        {data.map(({ image, title, description }, key) => (
+
+        {data.map(({ image, title, description, active }, key) => (
           <Card
             variant="ourwork"
+            active={active}
             key={key}
             index={key}
             image={image}

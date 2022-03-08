@@ -82,11 +82,11 @@ const Announcement: React.FC = () => {
           on
         </h1>
 
-        <div className="flex justify-center">
+        {/* <div className="flex justify-center">
           <button className="bg-button rounded-2xl py-4 px-16 text-sm text-white transition-transform duration-300 hover:scale-110">
             {`Let's go`}
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

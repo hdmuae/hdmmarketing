@@ -5,7 +5,7 @@ const About: React.FC = () => {
   return (
     <section
       id="about"
-      className="max-w-default m-auto flex w-full flex-col justify-between px-6 pt-20 md:w-4/5 md:px-0 lg:flex-row-reverse"
+      className="max-w-default m-auto flex w-full flex-col justify-between px-6 md:w-4/5 md:px-0 lg:flex-row-reverse"
     >
       <div className="flex w-full flex-col justify-center lg:ml-12 lg:w-2/5">
         <h1 className="font-fs mb-4 text-xl font-bold lg:text-2xl">About us</h1>
@@ -21,7 +21,7 @@ const About: React.FC = () => {
           width="343"
           height="243"
           layout="responsive"
-          src="/svg/mobile/about-us.svg"
+          src="/images/about-us.png"
           alt="About us"
           quality="100"
         />
