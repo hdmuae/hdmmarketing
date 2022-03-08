@@ -70,7 +70,7 @@ const Header: React.FC<HeaderProps> = ({ title, variant }) => {
           <Image
             height="344"
             width="343"
-            src="/images/mobile/image_first_block.png"
+            src="/images/mobile/image_first_block@4.png"
             alt="HDM Marketing services"
             quality="100"
           />
