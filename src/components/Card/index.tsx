@@ -31,17 +31,13 @@ const Card: React.FC<CardProps> = ({
           }`}
         >
           <div className="bg-lid bg-cover p-4">
-            <Link href={website}>
-              <a target="_blank">
-                <Image
-                  width="540"
-                  height="314"
-                  objectFit="cover"
-                  src={image}
-                  alt="Project preview"
-                />
-              </a>
-            </Link>
+            <Image
+              width="540"
+              height="314"
+              objectFit="cover"
+              src={image}
+              alt="Project preview"
+            />
           </div>
         </div>
         {active && (

@@ -81,7 +81,7 @@ const Header: React.FC<HeaderProps> = ({ title, variant }) => {
           </h1>
 
           <If condition={variant === "vertical"}>
-            <>
+            <Then>
               <p className="text-md mb-12 text-center text-white lg:text-left xl:text-lg">
                 Digital marketing one stop solution that <br /> fits your
                 business.
@@ -95,7 +95,7 @@ const Header: React.FC<HeaderProps> = ({ title, variant }) => {
                   Get Started
                 </button>
               </div> */}
-            </>
+            </Then>
           </If>
         </section>
       </div>
