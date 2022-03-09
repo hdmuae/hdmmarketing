@@ -19,6 +19,7 @@ const Services: React.FC = () => {
       <div className="flex flex-wrap justify-between">
         {data.map(({ icon, title, description }, key) => (
           <Card
+            website=""
             variant="service"
             key={key}
             image={icon}

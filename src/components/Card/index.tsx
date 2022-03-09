@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface CardProps {
   variant: "service" | "ourwork";
@@ -8,6 +9,7 @@ interface CardProps {
   active?: boolean;
   industry?: string;
   description: string;
+  website: string;
 }
 
 const Card: React.FC<CardProps> = ({
@@ -18,6 +20,7 @@ const Card: React.FC<CardProps> = ({
   active,
   industry,
   description,
+  website,
 }) => {
   return variant === "ourwork" ? (
     <div className="mb-12 flex flex-col justify-between lg:flex-row lg:odd:flex-row-reverse lg:even:flex-row">
@@ -28,13 +31,17 @@ const Card: React.FC<CardProps> = ({
           }`}
         >
           <div className="bg-lid bg-cover p-4">
-            <Image
-              width="540"
-              height="314"
-              objectFit="cover"
-              src={image}
-              alt="Project preview"
-            />
+            <Link href={website}>
+              <a target="_blank">
+                <Image
+                  width="540"
+                  height="314"
+                  objectFit="cover"
+                  src={image}
+                  alt="Project preview"
+                />
+              </a>
+            </Link>
           </div>
         </div>
         {active && (

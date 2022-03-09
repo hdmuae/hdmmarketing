@@ -28,8 +28,9 @@ const OurWork: React.FC = () => {
           </h2>
         </div>
 
-        {data.map(({ image, title, description, active }, key) => (
+        {data.map(({ image, title, description, active, website }, key) => (
           <Card
+            website={website}
             variant="ourwork"
             active={active}
             key={key}
