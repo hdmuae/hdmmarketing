@@ -12,7 +12,9 @@ import {
 const Portfolio: React.FC = () => {
   return (
     <>
-      <Head>Portfolio - HDM Marketing</Head>
+      <Head>
+        <title>Portfolio - HDM Marketing</title>
+      </Head>
       <Header variant="horizontal" title="Our Case Studies" />
       <Work />
       <Contact />
