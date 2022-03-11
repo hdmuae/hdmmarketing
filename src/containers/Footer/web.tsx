@@ -72,13 +72,13 @@ const Footer: React.FC = () => {
             <div className="mb-3 flex">
               <Image
                 src="/svg/location_icon.svg"
-                width="35"
-                height="20"
+                width="30"
+                height="25"
                 alt="Location icon"
               />
 
               <a
-                href="https://goo.gl/maps/TzvGDivQKDD1YdVx9"
+                href="https://goo.gl/maps/7baPY67BULuubtVw8"
                 target="_blank"
                 rel="noreferrer"
                 className="text-description ml-3"
@@ -89,11 +89,11 @@ const Footer: React.FC = () => {
             </div>
 
             <div className="flex">
-              <div className="invisible">
+              <div>
                 <Image
                   src="/svg/location_icon.svg"
-                  width="35"
-                  height="20"
+                  width="30"
+                  height="25"
                   alt="Location icon"
                 />
               </div>
