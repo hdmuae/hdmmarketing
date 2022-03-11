@@ -4,12 +4,12 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: "/contact",
+        source: "/contacts",
         destination: "/",
         permanent: "false",
       },
       {
-        source: "/about",
+        source: "/about-us",
         destination: "/",
         permanent: "false",
       },
