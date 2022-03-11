@@ -6,12 +6,12 @@ const nextConfig = {
       {
         source: "/contacts",
         destination: "/",
-        permanent: "false",
+        permanent: false,
       },
       {
         source: "/about-us",
         destination: "/",
-        permanent: "false",
+        permanent: false,
       },
     ];
   },
