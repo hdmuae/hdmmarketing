@@ -58,18 +58,6 @@ const Footer: React.FC = () => {
             </a>
           </div>
 
-          <div className="mb-3 flex">
-            <Image
-              src="/svg/tel_icon.svg"
-              width="30"
-              height="20"
-              alt="Location icon"
-            />
-            <a href="tel:+971 4 528 14 05" className="text-description ml-2">
-              +971 4 528 14 05
-            </a>
-          </div>
-
           <div className="flex">
             <Image
               src="/svg/mail_icon.svg"
