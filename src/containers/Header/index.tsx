@@ -169,42 +169,54 @@ const Header: React.FC<HeaderProps> = ({ title, variant }) => {
                   show={modal}
                 >
                   <form onSubmit={handleSubmit(onSubmit)} className="px-6">
-                    <label htmlFor="name" className="font-inter mb-2 block">
+                    <label
+                      htmlFor="modal_name"
+                      className="font-inter mb-2 block"
+                    >
                       Your name
                     </label>
                     <input
-                      id="name"
+                      id="modal_name"
                       {...register("name")}
                       style={{ WebkitAppearance: "none" }}
                       className="mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
                     />
 
-                    <label htmlFor="number" className="font-inter mb-2 block">
+                    <label
+                      htmlFor="modal_number"
+                      className="font-inter mb-2 block"
+                    >
                       Your number
                     </label>
                     <input
-                      id="number"
+                      id="modal_number"
                       {...register("number")}
                       style={{ WebkitAppearance: "none" }}
                       className="mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
                     />
 
-                    <label htmlFor="email" className="font-inter mb-2 block">
+                    <label
+                      htmlFor="modal_email"
+                      className="font-inter mb-2 block"
+                    >
                       Your email
                     </label>
                     <input
-                      id="email"
+                      id="modal_email"
                       {...register("email")}
                       style={{ WebkitAppearance: "none" }}
                       className="font-sf mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
                     />
 
-                    <label htmlFor="message" className="font-inter mb-2 block">
+                    <label
+                      htmlFor="modal_message"
+                      className="font-inter mb-2 block"
+                    >
                       Tell us about your project
                     </label>
                     <textarea
                       rows={5}
-                      id="message"
+                      id="modal_message"
                       {...register("message")}
                       style={{ WebkitAppearance: "none" }}
                       className="mb-4 w-full rounded-2xl px-4 shadow-md outline-none"
