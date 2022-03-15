@@ -167,7 +167,6 @@ const Header: React.FC<HeaderProps> = ({ title, variant }) => {
                   onClose={toggleModal}
                   setShowModal={toggleModal}
                   show={modal}
-                  title="Tell us about your project"
                 >
                   <form onSubmit={handleSubmit(onSubmit)} className="px-6">
                     <h1 className="font-inter mb-2">Your name</h1>
@@ -176,19 +175,21 @@ const Header: React.FC<HeaderProps> = ({ title, variant }) => {
                       className="mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
                     />
 
-                    <h1 className="mb-2">Your number</h1>
+                    <h1 className="font-inter mb-2">Your number</h1>
                     <input
                       {...register("number")}
                       className="mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
                     />
 
-                    <h1 className="mb-2">Your email</h1>
+                    <h1 className="font-inter mb-2">Your email</h1>
                     <input
                       {...register("email")}
-                      className="mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
+                      className="font-sf mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
                     />
 
-                    <h1 className="mb-2">Describe your idea</h1>
+                    <h1 className="font-inter mb-2">
+                      Tell us about your project
+                    </h1>
                     <textarea
                       rows={5}
                       {...register("message")}
