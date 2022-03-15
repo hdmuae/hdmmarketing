@@ -172,18 +172,21 @@ const Header: React.FC<HeaderProps> = ({ title, variant }) => {
                     <h1 className="font-inter mb-2">Your name</h1>
                     <input
                       {...register("name")}
+                      style={{ WebkitAppearance: "none" }}
                       className="mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
                     />
 
                     <h1 className="font-inter mb-2">Your number</h1>
                     <input
                       {...register("number")}
+                      style={{ WebkitAppearance: "none" }}
                       className="mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
                     />
 
                     <h1 className="font-inter mb-2">Your email</h1>
                     <input
                       {...register("email")}
+                      style={{ WebkitAppearance: "none" }}
                       className="font-sf mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
                     />
 
@@ -193,6 +196,7 @@ const Header: React.FC<HeaderProps> = ({ title, variant }) => {
                     <textarea
                       rows={5}
                       {...register("message")}
+                      style={{ WebkitAppearance: "none" }}
                       className="mb-4 w-full rounded-2xl px-4 shadow-md outline-none"
                     />
 
