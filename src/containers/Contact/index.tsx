@@ -61,26 +61,38 @@ const Contact: React.FC = () => {
 
       <div style={style}>
         <form onSubmit={handleSubmit(onSubmit)} className="px-6 py-12">
-          <label className="font-inter mb-2 block">Your name</label>
+          <label htmlFor="name" className="font-inter mb-2 block">
+            Your name
+          </label>
           <input
+            id="name"
             {...register("name")}
             className="mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
           />
 
-          <label className="mb-2 block">Your contact number</label>
+          <label htmlFor="number" className="mb-2 block">
+            Your contact number
+          </label>
           <input
+            id="number"
             {...register("number")}
             className="mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
           />
 
-          <label className="mb-2 block">Your email</label>
+          <label htmlFor="email" className="mb-2 block">
+            Your email
+          </label>
           <input
+            id="email"
             {...register("email")}
             className="mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
           />
 
-          <label className="mb-2 block">Your Message</label>
+          <label htmlFor="message" className="mb-2 block">
+            Your Message
+          </label>
           <textarea
+            id="message"
             rows={5}
             {...register("message")}
             className="mb-4 w-full rounded-2xl px-4 shadow-md outline-none"

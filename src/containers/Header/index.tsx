@@ -169,32 +169,42 @@ const Header: React.FC<HeaderProps> = ({ title, variant }) => {
                   show={modal}
                 >
                   <form onSubmit={handleSubmit(onSubmit)} className="px-6">
-                    <h1 className="font-inter mb-2">Your name</h1>
+                    <label htmlFor="name" className="font-inter mb-2 block">
+                      Your name
+                    </label>
                     <input
+                      id="name"
                       {...register("name")}
                       style={{ WebkitAppearance: "none" }}
                       className="mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
                     />
 
-                    <h1 className="font-inter mb-2">Your number</h1>
+                    <label htmlFor="number" className="font-inter mb-2 block">
+                      Your number
+                    </label>
                     <input
+                      id="number"
                       {...register("number")}
                       style={{ WebkitAppearance: "none" }}
                       className="mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
                     />
 
-                    <h1 className="font-inter mb-2">Your email</h1>
+                    <label htmlFor="email" className="font-inter mb-2 block">
+                      Your email
+                    </label>
                     <input
+                      id="email"
                       {...register("email")}
                       style={{ WebkitAppearance: "none" }}
                       className="font-sf mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
                     />
 
-                    <h1 className="font-inter mb-2">
+                    <label htmlFor="message" className="font-inter mb-2 block">
                       Tell us about your project
-                    </h1>
+                    </label>
                     <textarea
                       rows={5}
+                      id="message"
                       {...register("message")}
                       style={{ WebkitAppearance: "none" }}
                       className="mb-4 w-full rounded-2xl px-4 shadow-md outline-none"
