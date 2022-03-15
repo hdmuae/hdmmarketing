@@ -139,25 +139,25 @@ const Footer: React.FC = () => {
           onSubmit={handleSubmit(onSubmit)}
           className="mx-auto py-12 md:px-8 xl:px-16"
         >
-          <h1 className="font-inter mb-2">Your name</h1>
+          <label className="font-inter mb-2 block">Your name</label>
           <input
             {...register("name")}
             className="mb-4 h-16 w-full rounded-2xl px-4 shadow-lg outline-none"
           />
 
-          <h1 className="mb-2">Your contact number</h1>
+          <label className="mb-2 block">Your contact number</label>
           <input
             {...register("number")}
             className="mb-4 h-16 w-full rounded-2xl px-4 shadow-lg outline-none"
           />
 
-          <h1 className="mb-2">Your email</h1>
+          <label className="mb-2 block">Your email</label>
           <input
             {...register("email")}
             className="mb-4 h-16 w-full rounded-2xl px-4 shadow-lg outline-none"
           />
 
-          <h1 className="mb-2">Your Message</h1>
+          <label className="mb-2 block">Your Message</label>
           <textarea
             rows={7}
             {...register("message")}
