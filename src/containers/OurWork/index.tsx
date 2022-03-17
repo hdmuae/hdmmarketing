@@ -9,6 +9,7 @@ const OurWork: React.FC = () => {
     <section id="ourwork" className="relative">
       <div>
         <Image
+          className="-z-10"
           layout="fill"
           src="/images/background_portfolio.png"
           alt="HDM portfolio background"
@@ -38,6 +39,12 @@ const OurWork: React.FC = () => {
             description={description}
           />
         ))}
+
+        <h2 className="font-inter text-button absolute bottom-12 cursor-pointer text-sm font-medium lg:hidden">
+          <Link href="/portfolio">
+            <a className="z-50 mr-3 cursor-pointer">See all projects</a>
+          </Link>
+        </h2>
       </div>
     </section>
   );
