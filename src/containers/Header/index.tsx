@@ -78,8 +78,10 @@ const Header: React.FC<HeaderProps> = ({ title, variant }) => {
     >
       <a
         href="https://wa.me/971505095699"
+        target="_blank"
         className="fixed bottom-[35px] right-[35px] z-50 flex items-center justify-center rounded-full text-center lg:bottom-[20px] lg:right-[20px]"
         style={style}
+        rel="noreferrer"
       >
         <Image
           src="/svg/whatsapp.svg"
@@ -161,7 +163,7 @@ const Header: React.FC<HeaderProps> = ({ title, variant }) => {
                   onClick={toggleModal}
                   className="align-center bg-button text-md rounded-2xl py-4 px-16 text-white transition-transform duration-300 hover:scale-110"
                 >
-                  Get Started
+                  Submit a Request
                 </button>
                 <Modal
                   onClose={toggleModal}
@@ -179,7 +181,7 @@ const Header: React.FC<HeaderProps> = ({ title, variant }) => {
                       id="modal_name"
                       {...register("name")}
                       style={{ WebkitAppearance: "none" }}
-                      className="mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
+                      className="mb-4 h-16 w-full rounded-2xl px-4 outline-none drop-shadow-md"
                     />
 
                     <label
@@ -192,7 +194,7 @@ const Header: React.FC<HeaderProps> = ({ title, variant }) => {
                       id="modal_number"
                       {...register("number")}
                       style={{ WebkitAppearance: "none" }}
-                      className="mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
+                      className="mb-4 h-16 w-full rounded-2xl px-4 outline-none drop-shadow-md"
                     />
 
                     <label
@@ -205,7 +207,7 @@ const Header: React.FC<HeaderProps> = ({ title, variant }) => {
                       id="modal_email"
                       {...register("email")}
                       style={{ WebkitAppearance: "none" }}
-                      className="font-sf mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
+                      className="font-sf mb-4 h-16 w-full rounded-2xl px-4 outline-none drop-shadow-md"
                     />
 
                     <label
@@ -219,7 +221,7 @@ const Header: React.FC<HeaderProps> = ({ title, variant }) => {
                       id="modal_message"
                       {...register("message")}
                       style={{ WebkitAppearance: "none" }}
-                      className="mb-4 w-full rounded-2xl px-4 shadow-md outline-none"
+                      className="mb-4 w-full rounded-2xl px-4 outline-none drop-shadow-md"
                     />
 
                     <div className="flex justify-center">
