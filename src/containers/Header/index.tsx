@@ -181,7 +181,7 @@ const Header: React.FC<HeaderProps> = ({ title, variant }) => {
                       id="modal_name"
                       {...register("name")}
                       style={{ WebkitAppearance: "none" }}
-                      className="mb-4 h-16 w-full rounded-2xl px-4 outline-none drop-shadow-md"
+                      className="mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
                     />
 
                     <label
@@ -194,7 +194,7 @@ const Header: React.FC<HeaderProps> = ({ title, variant }) => {
                       id="modal_number"
                       {...register("number")}
                       style={{ WebkitAppearance: "none" }}
-                      className="mb-4 h-16 w-full rounded-2xl px-4 outline-none drop-shadow-md"
+                      className="mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
                     />
 
                     <label
@@ -207,7 +207,7 @@ const Header: React.FC<HeaderProps> = ({ title, variant }) => {
                       id="modal_email"
                       {...register("email")}
                       style={{ WebkitAppearance: "none" }}
-                      className="font-sf mb-4 h-16 w-full rounded-2xl px-4 outline-none drop-shadow-md"
+                      className="font-sf mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
                     />
 
                     <label
@@ -221,7 +221,7 @@ const Header: React.FC<HeaderProps> = ({ title, variant }) => {
                       id="modal_message"
                       {...register("message")}
                       style={{ WebkitAppearance: "none" }}
-                      className="mb-4 w-full rounded-2xl px-4 outline-none drop-shadow-md"
+                      className="mb-4 w-full rounded-2xl px-4 shadow-md outline-none"
                     />
 
                     <div className="flex justify-center">
