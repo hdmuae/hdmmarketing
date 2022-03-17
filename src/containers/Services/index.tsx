@@ -14,7 +14,7 @@ const Services: React.FC = () => {
       id="services"
       className="max-w-default mx-auto w-full px-6 pt-20 md:w-4/5 md:px-0"
     >
-      <h1 className="font-fs mb-8 text-xl font-bold lg:text-2xl">Services</h1>
+      <h1 className="mb-8 text-xl font-bold lg:text-2xl">Services</h1>
 
       <div className="flex flex-wrap justify-between">
         {data.map(({ icon, title, description }, key) => (

@@ -55,9 +55,7 @@ const Footer: React.FC = () => {
       className="max-w-default mx-auto hidden w-4/5 justify-between py-20 px-6 lg:flex lg:px-0"
     >
       <div className="w-1/2 pb-4">
-        <h1 className="font-fs mb-4 text-xl font-bold lg:text-2xl">
-          Contact Us
-        </h1>
+        <h1 className="mb-4 text-xl font-bold lg:text-2xl">Contact Us</h1>
 
         <p className="font-md font-inter text-description mb-8 text-lg leading-tight">
           Whether you have a question about our services, projects, pricing or

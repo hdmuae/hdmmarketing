@@ -8,8 +8,8 @@ const About: React.FC = () => {
       className="max-w-default m-auto flex w-full flex-col justify-between px-6 md:w-4/5 md:px-0 lg:flex-row-reverse"
     >
       <div className="flex w-full flex-col justify-center lg:ml-12 lg:w-2/5">
-        <h1 className="font-fs mb-4 text-xl font-bold lg:text-2xl">About us</h1>
-        <p className="font-md font-inter text-description mb-8 text-sm leading-tight xl:text-lg">
+        <h1 className="mb-4 text-xl font-bold lg:text-2xl">About us</h1>
+        <p className="text-description font-inter mb-8 text-sm font-normal leading-tight xl:text-lg">
           HDM Marketing is a full-service digital marketing agency based in
           Dubai, UAE. We combine a data-driven approach with knowledge gained
           from years in digital marketing to deliver outstanding results to our

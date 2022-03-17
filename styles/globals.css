@@ -4,27 +4,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap");
 
-@font-face {
-  font-display: "swap";
-  font-weight: "Bold";
-  font-family: "SF Pro Display";
-  src: url("../public/fonts/SFPRODISPLAYBOLD.OTF") format("otf");
-}
-
-@font-face {
-  font-display: "swap";
-  font-weight: "Regular";
-  font-family: "SF Pro Display";
-  src: url("../public/fonts/SFPRODISPLAYREGULAR.OTF") format("otf");
-}
-
-@font-face {
-  font-display: "swap";
-  font-weight: "Medium";
-  font-family: "SF Pro Display";
-  src: url("../public/fonts/SFPRODISPLAYMEDIUM.OTF") format("otf");
-}
-
 @layer base {
   html,
   body {

@@ -10,7 +10,6 @@ module.exports = {
         default: "1366px",
       },
       fontFamily: {
-        sf: "SF Pro Display",
         inter: "Inter",
       },
       fontSize: {

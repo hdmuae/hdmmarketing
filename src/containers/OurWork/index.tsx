@@ -17,9 +17,7 @@ const OurWork: React.FC = () => {
 
       <div className="max-w-default mx-auto w-full py-12 px-6 md:w-4/5 lg:px-0">
         <div className="flex items-center justify-between">
-          <h1 className="font-fs mb-8 text-xl font-bold lg:text-2xl">
-            Our work
-          </h1>
+          <h1 className="mb-8 text-xl font-bold lg:text-2xl">Our work</h1>
           <h2 className="font-inter text-button z-10 hidden cursor-pointer text-lg font-medium lg:block">
             <Link href="/portfolio">
               <a className="mr-3 cursor-pointer">See all projects</a>

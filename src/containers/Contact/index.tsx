@@ -51,7 +51,7 @@ const Contact: React.FC = () => {
   return (
     <section className="lg:hidden">
       <div className="px-6 pt-28 pb-4">
-        <h1 className="font-fs mb-4 text-xl font-bold">Contact Us</h1>
+        <h1 className="mb-4 text-xl font-bold">Contact Us</h1>
 
         <p className="font-md font-inter text-description mb-8 text-sm">
           Whether you have a question about our services, projects, pricing or

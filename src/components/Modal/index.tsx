@@ -63,7 +63,7 @@ const Modal: React.FC<myProps> = ({
             />
           </button>
         </div>
-        {title && <div className="font-sf text-center text-lg">{title}</div>}
+        {title && <div className="text-center text-lg">{title}</div>}
         <div className="pt-4">{children}</div>
       </div>
     </div>

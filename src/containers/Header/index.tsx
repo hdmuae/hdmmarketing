@@ -146,7 +146,7 @@ const Header: React.FC<HeaderProps> = ({ title, variant }) => {
           />
         </div>
         <section className="algin-center flex flex-col">
-          <h1 className="font-sf my-6 whitespace-pre-line text-center text-xl font-bold leading-tight text-white lg:mt-32 lg:text-left lg:text-xl xl:text-2xl">
+          <h1 className="my-6 whitespace-pre-line text-center text-xl font-semibold leading-tight text-white lg:mt-32 lg:text-left lg:text-xl xl:text-2xl">
             {title}
           </h1>
 
@@ -207,7 +207,7 @@ const Header: React.FC<HeaderProps> = ({ title, variant }) => {
                       id="modal_email"
                       {...register("email")}
                       style={{ WebkitAppearance: "none" }}
-                      className="font-sf mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
+                      className="mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
                     />
 
                     <label

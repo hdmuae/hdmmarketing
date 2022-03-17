@@ -77,7 +77,7 @@ const Announcement: React.FC = () => {
         />
       </div>
       <div className="z-50 mx-auto w-11/12">
-        <h1 className="font-sf mb-8 text-center text-[48px] font-bold leading-tight text-white">
+        <h1 className="mb-8 text-center text-[48px] font-medium leading-tight text-white">
           We share the things we like and the <br /> stuff that we are working
           on
         </h1>
