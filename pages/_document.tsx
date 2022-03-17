@@ -9,7 +9,7 @@ const Home = () => {
           name="description"
           content="Full-Service Digital Marketing Agency in Dubai & Zurich. HDM specializes in Web Development, Design & UX and Digital Marketing Services. Contact us for a Digital Marketing Audit."
         />
-        <meta property="og:image" content="../public/images/metalogo.jpeg" />
+        <meta property="og:image" content="/images/metalogo.jpeg" />
 
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
