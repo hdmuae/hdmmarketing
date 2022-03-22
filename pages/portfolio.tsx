@@ -15,7 +15,11 @@ const Portfolio: React.FC = () => {
       <Head>
         <title>Portfolio - HDM Marketing</title>
       </Head>
-      <Header variant="horizontal" title="Our Case Studies" />
+      <Header
+        variant="horizontal"
+        title="Our Case Studies"
+        image="/images/portfolio-header.png"
+      />
       <Work />
       <Contact />
       <Footer />

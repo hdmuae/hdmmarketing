@@ -23,6 +23,7 @@ const Home: NextPage = () => {
       </Head>
 
       <Header
+        image=""
         variant="vertical"
         title={`Lift your business \n to new heights`}
       />

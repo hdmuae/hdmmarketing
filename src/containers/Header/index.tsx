@@ -23,9 +23,10 @@ const style: React.CSSProperties = {
 interface HeaderProps {
   title: string;
   variant: "horizontal" | "vertical";
+  image: string;
 }
 
-const Header: React.FC<HeaderProps> = ({ title, variant }) => {
+const Header: React.FC<HeaderProps> = ({ title, variant, image }) => {
   const modal = useStore((state) => state.modal);
   const toggleModal = useStore((state) => state.toggleModal);
 
@@ -110,7 +111,7 @@ const Header: React.FC<HeaderProps> = ({ title, variant }) => {
           quality="100"
         />
       </div>
-      <div className="absolute right-0 z-10 hidden md:w-[610px] lg:top-32 lg:block lg:w-[710] xl:top-20 xl:w-[810px]">
+      <div className="absolute right-0 z-10 hidden md:w-[610px] lg:top-32 lg:block lg:w-[710] xl:top-20 xl:w-[710px] 2xl:w-[810px]">
         <If condition={variant === "vertical"}>
           <Then>
             <Image
@@ -125,7 +126,7 @@ const Header: React.FC<HeaderProps> = ({ title, variant }) => {
             <Image
               height="542"
               width="810"
-              src="/images/portfolio-header.png"
+              src={image}
               alt="HDM Marketing services"
               quality="100"
             />
