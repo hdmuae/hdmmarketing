@@ -11,13 +11,11 @@ interface myProps {
 }
 
 const style: React.CSSProperties = {
-  position: "fixed",
-  // bottom: "0",
+  // position: "fixed",
+  bottom: "0",
   left: "0",
   right: "0",
   top: "0",
-  zIndex: 1,
-  background: "#fff",
 };
 const Modal: React.FC<myProps> = ({
   show,
@@ -55,6 +53,11 @@ const Modal: React.FC<myProps> = ({
     };
   }, [show]);
 
+  React.useEffect(() => {
+    document.body.style.overflow =
+      show && window.screen.width < 1024 ? "hidden" : "";
+  }, [show]);
+
   const modalContent = show ? (
     <div
       ref={ref}
@@ -62,8 +65,8 @@ const Modal: React.FC<myProps> = ({
       className="absolute top-0 left-0 z-30 flex h-full w-full items-center justify-center"
     >
       <div
-        // style={style}
-        className="mt-32 w-11/12 overflow-hidden rounded-xl bg-white p-4 shadow-sm lg:mt-0 lg:h-[670px] lg:w-[500px]"
+        className="fixed top-0 bottom-0 right-0 left-0 bg-white p-4 shadow-sm lg:relative lg:mt-0 lg:h-[750px] lg:w-[500px] lg:rounded-xl"
+        // className="mt-32 w-11/12 overflow-hidden rounded-xl bg-white p-4 shadow-sm lg:mt-0 lg:h-[670px] lg:w-[500px]"
       >
         <div className="flex justify-end text-lg">
           <button onClick={handleCloseClick}>
