@@ -66,7 +66,7 @@ const Contact: React.FC = () => {
           </label>
           <input
             id="name"
-            {...register("name")}
+            {...register("name", { required: true })}
             className="mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
           />
 
@@ -75,7 +75,7 @@ const Contact: React.FC = () => {
           </label>
           <input
             id="number"
-            {...register("number")}
+            {...register("number", { required: true })}
             className="mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
           />
 
@@ -84,7 +84,7 @@ const Contact: React.FC = () => {
           </label>
           <input
             id="email"
-            {...register("email")}
+            {...register("email", { required: true })}
             className="mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
           />
 
@@ -94,7 +94,7 @@ const Contact: React.FC = () => {
           <textarea
             id="message"
             rows={5}
-            {...register("message")}
+            {...register("message", { required: true })}
             className="mb-4 w-full rounded-2xl px-4 shadow-md outline-none"
           />
 

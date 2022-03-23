@@ -12,19 +12,34 @@ const style: React.CSSProperties = {
 };
 
 const Footer: React.FC = () => {
-  const { register, handleSubmit, reset } = useForm();
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
 
-  const toastifySuccess = () => {
-    toast.success("Message sent successfully!", {
-      position: "bottom-right",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: false,
-      className: "submit-feedback success",
-      toastId: "notifyToast",
-    });
+  const toastify = (state: boolean) => {
+    state
+      ? toast.success("Message sent successfully!", {
+          position: "bottom-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: false,
+          className: "submit-feedback success",
+          toastId: "notifyToast",
+        })
+      : toast.error(errors, {
+          position: "bottom-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: false,
+          progress: undefined,
+        });
   };
 
   const onSubmit = async (data: any) => {
@@ -44,7 +59,7 @@ const Footer: React.FC = () => {
         "user_bDIEmwy6qfjsQW9OkuxdP"
       );
       reset();
-      toastifySuccess();
+      toastify(true);
     } catch (e) {
       console.log(e);
     }
@@ -142,7 +157,7 @@ const Footer: React.FC = () => {
           </label>
           <input
             id="form_name"
-            {...register("name")}
+            {...register("name", { required: true })}
             className="mb-4 h-16 w-full rounded-2xl px-4 shadow-lg outline-none"
           />
 
@@ -151,7 +166,7 @@ const Footer: React.FC = () => {
           </label>
           <input
             id="form_number"
-            {...register("number")}
+            {...register("number", { required: true })}
             className="mb-4 h-16 w-full rounded-2xl px-4 shadow-lg outline-none"
           />
 
@@ -160,7 +175,7 @@ const Footer: React.FC = () => {
           </label>
           <input
             id="form_email"
-            {...register("email")}
+            {...register("email", { required: true })}
             className="mb-4 h-16 w-full rounded-2xl px-4 shadow-lg outline-none"
           />
 
@@ -170,7 +185,7 @@ const Footer: React.FC = () => {
           <textarea
             id="form_message"
             rows={7}
-            {...register("message")}
+            {...register("message", { required: true })}
             className="mb-8 w-full rounded-2xl p-4 shadow-lg outline-none"
           />
 
