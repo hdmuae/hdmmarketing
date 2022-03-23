@@ -75,7 +75,7 @@ const Header: React.FC<HeaderProps> = ({ title, variant, image }) => {
             <Image
               height="880"
               width="810"
-              src="/images/image_first_block.png"
+              src="/svg/header_image.svg"
               alt="HDM Marketing services"
               quality="100"
             />
