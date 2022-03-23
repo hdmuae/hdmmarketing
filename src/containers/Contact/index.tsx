@@ -101,7 +101,7 @@ const Contact: React.FC = () => {
           <div className="flex justify-center">
             <div
               className="g-recaptcha"
-              data-sitekey="6Lc-CQMfAAAAAN6woHHMCph6VrEeL2s6n16yTnro"
+              data-sitekey="6LezEAMfAAAAAHKw6-lsl-zma4rCQ-1VQdprD3Ez"
             ></div>
             <button className="bg-button rounded-2xl py-4 px-16 text-white">
               Submit
