@@ -13,11 +13,16 @@ const Form: React.FC<{ toggle: any }> = ({ toggle }) => {
   const schema = yup.object().shape({
     name: yup.string().min(5).max(32).required(),
     email: yup.string().email().required(),
-    number: yup.number().required(),
+    number: yup.number().typeError("Number can not be a string").required(),
     message: yup.string().required(),
   });
 
-  const { register, handleSubmit, reset } = useForm({
+  const {
+    reset,
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
     resolver: yupResolver(schema),
   });
 
@@ -70,6 +75,7 @@ const Form: React.FC<{ toggle: any }> = ({ toggle }) => {
         style={{ WebkitAppearance: "none" }}
         className="mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
       />
+      <p className="text-red-400">{errors.name?.message}</p>
 
       <label htmlFor="modal_number" className="font-inter mb-2 block">
         Your number
@@ -80,6 +86,7 @@ const Form: React.FC<{ toggle: any }> = ({ toggle }) => {
         style={{ WebkitAppearance: "none" }}
         className="mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
       />
+      <p className="text-red-400">{errors.number?.message}</p>
 
       <label htmlFor="modal_email" className="font-inter mb-2 block">
         Your email
@@ -90,6 +97,7 @@ const Form: React.FC<{ toggle: any }> = ({ toggle }) => {
         style={{ WebkitAppearance: "none" }}
         className="mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
       />
+      <p className="text-red-400">{errors.email?.message}</p>
 
       <label htmlFor="modal_message" className="font-inter mb-2 block">
         Tell us about your project
@@ -99,8 +107,9 @@ const Form: React.FC<{ toggle: any }> = ({ toggle }) => {
         id="modal_message"
         {...register("message")}
         style={{ WebkitAppearance: "none" }}
-        className="mb-4 w-full rounded-2xl px-4 shadow-md outline-none"
+        className="mb-4 w-full rounded-2xl p-4 shadow-md outline-none"
       />
+      <p className="text-red-400">{errors.message?.message}</p>
 
       <div className="flex justify-center">
         <ReCAPTCHA
