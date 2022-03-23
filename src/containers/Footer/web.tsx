@@ -1,73 +1,11 @@
 import * as React from "react";
 import Image from "next/image";
-import emailjs from "emailjs-com";
-import { useForm } from "react-hook-form";
-import { ToastContainer, toast } from "react-toastify";
-import ReCAPTCHA from "react-google-recaptcha";
-import "react-toastify/dist/ReactToastify.min.css";
 
-const style: React.CSSProperties = {
-  borderRadius: "24px",
-  background:
-    "linear-gradient(268.5deg, rgba(255, 171, 188, 0.1) -0.06%, rgba(164, 179, 255, 0.1) 97.65%)",
-};
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.min.css";
+import Form from "../Contact/form";
 
 const Footer: React.FC = () => {
-  const [captcha, setCaptcha] = React.useState("");
-
-  const {
-    register,
-    handleSubmit,
-    reset,
-    formState: { errors },
-  } = useForm();
-
-  const toastify = (state: boolean) => {
-    state
-      ? toast.success("Message sent successfully!", {
-          position: "bottom-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: false,
-          className: "submit-feedback success",
-          toastId: "notifyToast",
-        })
-      : toast.error(errors, {
-          position: "bottom-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: false,
-          progress: undefined,
-        });
-  };
-
-  const onSubmit = async (data: any) => {
-    const { name, email, number, message } = data;
-
-    try {
-      const templateParams = {
-        name,
-        email,
-        number,
-        message,
-        "g-recaptcha-response": captcha,
-      };
-      await emailjs.send(
-        "service_m9x0oik",
-        "template_z3zmvkb",
-        templateParams,
-        "user_bDIEmwy6qfjsQW9OkuxdP"
-      );
-      reset();
-      toastify(true);
-    } catch (e) {
-      console.log(e);
-    }
-  };
   return (
     <section
       id="contact"
@@ -151,60 +89,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
 
-      <form
-        style={style}
-        onSubmit={handleSubmit(onSubmit)}
-        className="mx-auto h-full w-[47%] py-12 md:px-8 xl:px-16"
-      >
-        <label htmlFor="form_name" className="font-inter mb-2 block">
-          Your name
-        </label>
-        <input
-          id="form_name"
-          {...register("name", { required: true })}
-          className="mb-4 h-16 w-full rounded-2xl px-4 shadow-lg outline-none"
-        />
-
-        <label htmlFor="form_number" className="mb-2 block">
-          Your contact number
-        </label>
-        <input
-          id="form_number"
-          {...register("number", { required: true })}
-          className="mb-4 h-16 w-full rounded-2xl px-4 shadow-lg outline-none"
-        />
-
-        <label htmlFor="form_email" className="mb-2 block">
-          Your email
-        </label>
-        <input
-          id="form_email"
-          {...register("email", { required: true })}
-          className="mb-4 h-16 w-full rounded-2xl px-4 shadow-lg outline-none"
-        />
-
-        <label htmlFor="form_message" className="mb-2 block">
-          Your Message
-        </label>
-        <textarea
-          id="form_message"
-          rows={7}
-          {...register("message", { required: true })}
-          className="mb-8 w-full rounded-2xl p-4 shadow-lg outline-none"
-        />
-
-        <ReCAPTCHA
-          sitekey="6LezEAMfAAAAAHKw6-lsl-zma4rCQ-1VQdprD3Ez"
-          onChange={(value: any) => setCaptcha(value)}
-          className="mb-4"
-        />
-
-        <div className="flex justify-center">
-          <button className="bg-button rounded-2xl py-4 px-16 text-white transition-transform duration-300 hover:scale-110">
-            Submit
-          </button>
-        </div>
-      </form>
+      <Form />
       <ToastContainer />
     </section>
   );
