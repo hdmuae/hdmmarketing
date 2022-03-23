@@ -1,6 +1,6 @@
 import * as React from "react";
-import Image from "next/image";
 import ReactDOM from "react-dom";
+import Image from "next/image";
 
 interface myProps {
   show: boolean;
@@ -10,13 +10,6 @@ interface myProps {
   setShowModal: (arg: boolean) => void;
 }
 
-const style: React.CSSProperties = {
-  // position: "fixed",
-  bottom: "0",
-  left: "0",
-  right: "0",
-  top: "0",
-};
 const Modal: React.FC<myProps> = ({
   show,
   title,

@@ -3,12 +3,8 @@ import Navbar from "../Nav";
 import Image from "next/image";
 import useStore from "../../state";
 import Modal from "../../components/Modal";
-import emailjs from "emailjs-com";
-
-import { useForm } from "react-hook-form";
+import Form from "./form";
 import { If, Then, Else } from "react-if";
-import { toast } from "react-toastify";
-import ReCAPTCHA from "react-google-recaptcha";
 
 const shadow: React.CSSProperties = {
   boxShadow: "-10px 19px 20px rgba(43, 9, 120, 0.35)",
@@ -29,48 +25,7 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ title, variant, image }) => {
   const modal = useStore((state) => state.modal);
-  const [captcha, setCaptcha] = React.useState("");
   const toggleModal = useStore((state) => state.toggleModal);
-
-  const { register, handleSubmit, reset } = useForm();
-
-  const toastifySuccess = () => {
-    toast.success("Message sent successfully!", {
-      position: "bottom-right",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: false,
-      className: "submit-feedback success",
-      toastId: "notifyToast",
-    });
-  };
-
-  const onSubmit = async (data: any) => {
-    const { name, email, number, message } = data;
-
-    try {
-      const templateParams = {
-        name,
-        email,
-        number,
-        message,
-        "g-recaptcha-response": captcha,
-      };
-      await emailjs.send(
-        "service_m9x0oik",
-        "template_z3zmvkb",
-        templateParams,
-        "user_bDIEmwy6qfjsQW9OkuxdP"
-      );
-      reset();
-      toggleModal();
-      toastifySuccess();
-    } catch (e) {
-      console.log(e);
-    }
-  };
 
   return (
     <div
@@ -174,74 +129,7 @@ const Header: React.FC<HeaderProps> = ({ title, variant, image }) => {
                   setShowModal={toggleModal}
                   show={modal}
                 >
-                  <form onSubmit={handleSubmit(onSubmit)} className="px-6">
-                    <label
-                      htmlFor="modal_name"
-                      className="font-inter mb-2 block"
-                    >
-                      Your name
-                    </label>
-                    <input
-                      id="modal_name"
-                      {...register("name", { required: true })}
-                      style={{ WebkitAppearance: "none" }}
-                      className="mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
-                    />
-
-                    <label
-                      htmlFor="modal_number"
-                      className="font-inter mb-2 block"
-                    >
-                      Your number
-                    </label>
-                    <input
-                      id="modal_number"
-                      {...register("number", { required: true })}
-                      style={{ WebkitAppearance: "none" }}
-                      className="mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
-                    />
-
-                    <label
-                      htmlFor="modal_email"
-                      className="font-inter mb-2 block"
-                    >
-                      Your email
-                    </label>
-                    <input
-                      id="modal_email"
-                      {...register("email", { required: true })}
-                      style={{ WebkitAppearance: "none" }}
-                      className="mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
-                    />
-
-                    <label
-                      htmlFor="modal_message"
-                      className="font-inter mb-2 block"
-                    >
-                      Tell us about your project
-                    </label>
-                    <textarea
-                      rows={5}
-                      id="modal_message"
-                      {...register("message", { required: true })}
-                      style={{ WebkitAppearance: "none" }}
-                      className="mb-4 w-full rounded-2xl px-4 shadow-md outline-none"
-                    />
-
-                    <div className="flex justify-center">
-                      <ReCAPTCHA
-                        sitekey="6LezEAMfAAAAAHKw6-lsl-zma4rCQ-1VQdprD3Ez"
-                        onChange={(value: any) => setCaptcha(value)}
-                        className="mb-4 text-center"
-                      />
-                    </div>
-
-                    <div className="flex justify-center">
-                      <button className="bg-button rounded-2xl py-4 px-16 text-white">
-                        Submit
-                      </button>
-                    </div>
-                  </form>
+                  <Form toggle={toggleModal} />
                 </Modal>
               </div>
             </Then>
