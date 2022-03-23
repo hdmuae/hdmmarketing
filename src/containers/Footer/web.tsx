@@ -13,6 +13,8 @@ const style: React.CSSProperties = {
 };
 
 const Footer: React.FC = () => {
+  const [captcha, setCaptcha] = React.useState("");
+
   const {
     register,
     handleSubmit,
@@ -52,6 +54,7 @@ const Footer: React.FC = () => {
         email,
         number,
         message,
+        "g-recaptcha-response": captcha,
       };
       await emailjs.send(
         "service_m9x0oik",
@@ -192,7 +195,7 @@ const Footer: React.FC = () => {
 
         <ReCAPTCHA
           sitekey="6LezEAMfAAAAAHKw6-lsl-zma4rCQ-1VQdprD3Ez"
-          onChange={onSubmit}
+          onChange={(value: any) => setCaptcha(value)}
           className="mb-4"
         />
 
