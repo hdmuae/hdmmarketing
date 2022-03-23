@@ -60,58 +60,61 @@ const Contact: React.FC = () => {
         </p>
       </div>
 
-      <div style={style}>
-        <form onSubmit={handleSubmit(onSubmit)} className="px-6 py-12">
-          <label htmlFor="name" className="font-inter mb-2 block">
-            Your name
-          </label>
-          <input
-            id="name"
-            {...register("name", { required: true })}
-            className="mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
-          />
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        style={style}
+        className="px-6 py-12"
+      >
+        <label htmlFor="name" className="font-inter mb-2 block">
+          Your name
+        </label>
+        <input
+          id="name"
+          {...register("name", { required: true })}
+          className="mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
+        />
 
-          <label htmlFor="number" className="mb-2 block">
-            Your contact number
-          </label>
-          <input
-            id="number"
-            {...register("number", { required: true })}
-            className="mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
-          />
+        <label htmlFor="number" className="mb-2 block">
+          Your contact number
+        </label>
+        <input
+          id="number"
+          {...register("number", { required: true })}
+          className="mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
+        />
 
-          <label htmlFor="email" className="mb-2 block">
-            Your email
-          </label>
-          <input
-            id="email"
-            {...register("email", { required: true })}
-            className="mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
-          />
+        <label htmlFor="email" className="mb-2 block">
+          Your email
+        </label>
+        <input
+          id="email"
+          {...register("email", { required: true })}
+          className="mb-4 h-16 w-full rounded-2xl px-4 shadow-md outline-none"
+        />
 
-          <label htmlFor="message" className="mb-2 block">
-            Your Message
-          </label>
-          <textarea
-            id="message"
-            rows={5}
-            {...register("message", { required: true })}
-            className="mb-4 w-full rounded-2xl px-4 shadow-md outline-none"
-          />
+        <label htmlFor="message" className="mb-2 block">
+          Your Message
+        </label>
+        <textarea
+          id="message"
+          rows={5}
+          {...register("message", { required: true })}
+          className="mb-4 w-full rounded-2xl px-4 shadow-md outline-none"
+        />
 
-          <ReCAPTCHA
-            sitekey="6LezEAMfAAAAAHKw6-lsl-zma4rCQ-1VQdprD3Ez"
-            onChange={onSubmit}
-          />
+        <ReCAPTCHA
+          sitekey="6LezEAMfAAAAAHKw6-lsl-zma4rCQ-1VQdprD3Ez"
+          onChange={onSubmit}
+          className="mb-4"
+        />
 
-          <div className="flex justify-center">
-            <button className="bg-button rounded-2xl py-4 px-16 text-white">
-              Submit
-            </button>
-          </div>
-        </form>
-        <ToastContainer />
-      </div>
+        <div className="flex justify-center">
+          <button className="bg-button rounded-2xl py-4 px-16 text-white">
+            Submit
+          </button>
+        </div>
+      </form>
+      <ToastContainer />
     </section>
   );
 };
