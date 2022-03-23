@@ -2,6 +2,7 @@ import * as React from "react";
 import emailjs from "emailjs-com";
 import { useForm } from "react-hook-form";
 import { ToastContainer, toast } from "react-toastify";
+import ReCAPTCHA from "react-google-recaptcha";
 import "react-toastify/dist/ReactToastify.min.css";
 
 const style: React.CSSProperties = {
@@ -98,10 +99,11 @@ const Contact: React.FC = () => {
             className="mb-4 w-full rounded-2xl px-4 shadow-md outline-none"
           />
 
-          <div
-            className="g-recaptcha"
-            data-sitekey="6LezEAMfAAAAAHKw6-lsl-zma4rCQ-1VQdprD3Ez"
-          ></div>
+          <ReCAPTCHA
+            sitekey="6LezEAMfAAAAAHKw6-lsl-zma4rCQ-1VQdprD3Ez"
+            onChange={onSubmit}
+          />
+
           <div className="flex justify-center">
             <button className="bg-button rounded-2xl py-4 px-16 text-white">
               Submit
