@@ -189,11 +189,11 @@ const Footer: React.FC = () => {
             className="mb-8 w-full rounded-2xl p-4 shadow-lg outline-none"
           />
 
+          <div
+            className="g-recaptcha"
+            data-sitekey="6LezEAMfAAAAAHKw6-lsl-zma4rCQ-1VQdprD3Ez"
+          ></div>
           <div className="flex justify-center">
-            <div
-              className="g-recaptcha"
-              data-sitekey="6LezEAMfAAAAAHKw6-lsl-zma4rCQ-1VQdprD3Ez"
-            ></div>
             <button className="bg-button rounded-2xl py-4 px-16 text-white transition-transform duration-300 hover:scale-110">
               Submit
             </button>
