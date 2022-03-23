@@ -218,7 +218,7 @@ const Header: React.FC<HeaderProps> = ({ title, variant, image }) => {
                       Tell us about your project
                     </label>
                     <textarea
-                      rows={5}
+                      rows={7}
                       id="modal_message"
                       {...register("message")}
                       style={{ WebkitAppearance: "none" }}

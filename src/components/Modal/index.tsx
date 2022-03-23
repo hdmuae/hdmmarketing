@@ -10,6 +10,15 @@ interface myProps {
   setShowModal: (arg: boolean) => void;
 }
 
+const style: React.CSSProperties = {
+  position: "fixed",
+  // bottom: "0",
+  left: "0",
+  right: "0",
+  top: "0",
+  zIndex: 1,
+  background: "#fff",
+};
 const Modal: React.FC<myProps> = ({
   show,
   title,
@@ -52,7 +61,10 @@ const Modal: React.FC<myProps> = ({
       id="modal"
       className="absolute top-0 left-0 z-30 flex h-full w-full items-center justify-center"
     >
-      <div className="mt-32 h-[670px] w-11/12 overflow-hidden rounded-xl bg-white p-4 shadow-sm lg:mt-0 lg:w-[500px]">
+      <div
+        style={style}
+        className="h-full rounded-xl bg-white p-4 shadow-sm lg:mt-0 lg:w-[500px]"
+      >
         <div className="flex justify-end text-lg">
           <button onClick={handleCloseClick}>
             <Image
