@@ -62,8 +62,8 @@ const Modal: React.FC<myProps> = ({
       className="absolute top-0 left-0 z-30 flex h-full w-full items-center justify-center"
     >
       <div
-        style={style}
-        className="h-full rounded-xl bg-white p-4 shadow-sm lg:mt-0 lg:w-[500px]"
+        // style={style}
+        className="mt-32 w-11/12 overflow-hidden rounded-xl bg-white p-4 shadow-sm lg:mt-0 lg:h-[670px] lg:w-[500px]"
       >
         <div className="flex justify-end text-lg">
           <button onClick={handleCloseClick}>
