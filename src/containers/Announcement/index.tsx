@@ -28,16 +28,16 @@ const Announcement: React.FC = () => {
       </div>
 
       <div className="absolute right-32 -top-12 hidden lg:block">
-        <Image width="305" height="156" src="/images/content.png" alt="" />
+        <Image width="305" height="156" src="/svg/content.svg" alt="" />
       </div>
       <div className="absolute bottom-20 right-0 hidden lg:block">
-        <Image width="247" height="124" src="/images/content3.png" alt="" />
+        <Image width="247" height="124" src="/svg/content3.svg" alt="" />
       </div>
       <div className="absolute left-0 hidden lg:block">
-        <Image width="247" height="124" src="/images/content1.png" alt="" />
+        <Image width="247" height="124" src="/svg/content1.svg" alt="" />
       </div>
       <div className="absolute -bottom-8 left-24 hidden lg:block">
-        <Image width="347" height="124" src="/images/content2.png" alt="" />
+        <Image width="347" height="124" src="/svg/content2.svg" alt="" />
       </div>
 
       {/* Mobile Cubes */}
