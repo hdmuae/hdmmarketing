@@ -61,9 +61,9 @@ const Announcement: React.FC = () => {
 
       <div className="absolute -bottom-16 right-28 hidden lg:block">
         <Image
-          width="162"
-          height="140"
-          src="/images/right_cube.png"
+          width="172"
+          height="150"
+          src="/svg/left_cube.svg"
           className="transition-transform duration-1000 ease-in-out group-hover:-rotate-180"
           alt="Right cube"
         />

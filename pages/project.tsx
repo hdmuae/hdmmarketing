@@ -123,11 +123,11 @@ const Project: React.FC = () => {
             />
           </div>
 
-          <div className="absolute -bottom-12 right-28 hidden lg:block">
+          <div className="absolute -bottom-16 right-28 hidden lg:block">
             <Image
-              width="162"
-              height="140"
-              src="/images/right_cube.png"
+              width="172"
+              height="150"
+              src="/svg/left_cube.svg"
               className="transition-transform duration-1000 ease-in-out group-hover:-rotate-180"
               alt="Right cube"
             />
@@ -149,13 +149,13 @@ const Project: React.FC = () => {
                   width="107"
                   height="106"
                   src="/svg/step1.svg"
-                  alt="left cube"
+                  alt="step 1"
                 />
                 <Image
                   width="107"
                   height="106"
                   src="/svg/line.svg"
-                  alt="left cube"
+                  alt="arrow"
                 />
               </div>
 
@@ -170,13 +170,13 @@ const Project: React.FC = () => {
                   width="107"
                   height="106"
                   src="/svg/step2.svg"
-                  alt="left cube"
+                  alt="step 2"
                 />
                 <Image
                   width="107"
                   height="106"
                   src="/svg/line.svg"
-                  alt="left cube"
+                  alt="arrow"
                 />
               </div>
 
@@ -191,13 +191,13 @@ const Project: React.FC = () => {
                   width="107"
                   height="106"
                   src="/svg/step3.svg"
-                  alt="left cube"
+                  alt="step 3"
                 />
                 <Image
                   width="107"
                   height="106"
                   src="/svg/line.svg"
-                  alt="left cube"
+                  alt="arrow"
                 />
               </div>
 
@@ -212,13 +212,13 @@ const Project: React.FC = () => {
                   width="107"
                   height="106"
                   src="/svg/step4.svg"
-                  alt="left cube"
+                  alt="step 4"
                 />
                 <Image
                   width="107"
                   height="106"
                   src="/svg/line.svg"
-                  alt="left cube"
+                  alt="arrow"
                 />
               </div>
 
@@ -233,13 +233,13 @@ const Project: React.FC = () => {
                   width="107"
                   height="106"
                   src="/svg/step5.svg"
-                  alt="left cube"
+                  alt="step 5"
                 />
                 <Image
                   width="107"
                   height="106"
                   src="/svg/line.svg"
-                  alt="left cube"
+                  alt="arrow"
                 />
               </div>
 
@@ -254,7 +254,7 @@ const Project: React.FC = () => {
                   width="107"
                   height="106"
                   src="/svg/step6.svg"
-                  alt="left cube"
+                  alt="step 6"
                 />
               </div>
 
@@ -335,11 +335,11 @@ const Project: React.FC = () => {
             />
           </div>
 
-          <div className="absolute -bottom-12 right-28 hidden lg:block">
+          <div className="absolute -bottom-16 right-28 hidden lg:block">
             <Image
-              width="162"
-              height="140"
-              src="/images/right_cube.png"
+              width="172"
+              height="150"
+              src="/svg/left_cube.svg"
               className="transition-transform duration-1000 ease-in-out group-hover:-rotate-180"
               alt="Right cube"
             />
