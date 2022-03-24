@@ -18,7 +18,7 @@ const Project: React.FC = () => {
       />
 
       {/* Brief */}
-      <section className="max-w-default m-auto mb-28 flex justify-between">
+      <section className="max-w-default m-auto mb-28 flex w-4/5 justify-between">
         <div className="w-3/5">
           <Image
             width={590}
@@ -43,7 +43,7 @@ const Project: React.FC = () => {
       </section>
 
       {/* Roadmap */}
-      <section className="max-w-default relative m-auto mb-28">
+      <section className="max-w-default relative m-auto mb-28 w-4/5">
         <h1 className="mb-12 text-xl">Roadmap</h1>
 
         <Image
@@ -57,7 +57,7 @@ const Project: React.FC = () => {
       </section>
 
       {/* Website Redesign & Maintenance. */}
-      <section className="max-w-default m-auto mb-28 flex justify-between">
+      <section className="max-w-default m-auto mb-28 flex w-4/5 justify-between">
         <div className="flex w-2/5 flex-col justify-center">
           <h1 className="text-xl">Website Redesign & Maintenance</h1>
           <div className="font-inter text-description text-md font-normal">
@@ -82,184 +82,190 @@ const Project: React.FC = () => {
       </section>
 
       {/* Project Lifecycle */}
-      <section className="relative mb-28 flex h-[660px] flex-col justify-center bg-cover lg:h-[450px]">
-        <div className="hidden md:block">
-          <Image
-            layout="fill"
-            objectFit="cover"
-            src="/images/banner.png"
-            alt="HDM Marketing services"
-            quality="100"
-          />
-        </div>
-
-        <div className="md:hidden">
-          <Image
-            layout="fill"
-            objectFit="cover"
-            src="/images/mobile/banner.png"
-            alt="HDM Marketing services"
-            quality="100"
-          />
-        </div>
-
-        {/* Mobile Cubes */}
-        <div className="absolute right-0 -top-12 lg:hidden">
-          <Image
-            width="107"
-            height="106"
-            src="/svg/right_cube.svg"
-            alt="Right cube"
-          />
-        </div>
-
-        <div className="absolute left-0 -bottom-20 lg:hidden">
-          <Image
-            width="107"
-            height="106"
-            src="/svg/left_cube.svg"
-            alt="left cube"
-          />
-        </div>
-
-        <div className="absolute -bottom-12 right-28 hidden lg:block">
-          <Image
-            width="162"
-            height="140"
-            src="/images/right_cube.png"
-            alt="Right cube"
-          />
-        </div>
-
-        <div className="absolute left-52 -top-12 hidden lg:block">
-          <Image
-            width="107"
-            height="106"
-            src="/svg/left_cube.svg"
-            alt="left cube"
-          />
-        </div>
-        <div className="max-w-default z-50 mx-auto flex">
-          <div className="">
-            <div className="mb-8">
-              <Image
-                width="107"
-                height="106"
-                src="/svg/step1.svg"
-                alt="left cube"
-              />
-              <Image
-                width="107"
-                height="106"
-                src="/svg/line.svg"
-                alt="left cube"
-              />
-            </div>
-
-            <p className="font-inter text-lg font-light text-white">
-              Wireframing
-            </p>
+      <section className="relative mb-28 flex h-[660px] bg-cover lg:h-[450px]">
+        <div className="max-w-default m-auto flex w-4/5">
+          <div className="hidden md:block">
+            <Image
+              layout="fill"
+              objectFit="cover"
+              src="/images/banner.png"
+              alt="HDM Marketing services"
+              quality="100"
+            />
           </div>
 
-          <div className="">
-            <div className="mb-8">
-              <Image
-                width="107"
-                height="106"
-                src="/svg/step2.svg"
-                alt="left cube"
-              />
-              <Image
-                width="107"
-                height="106"
-                src="/svg/line.svg"
-                alt="left cube"
-              />
-            </div>
-
-            <p className="font-inter text-lg font-light text-white">
-              UI/UX design
-            </p>
+          <div className="md:hidden">
+            <Image
+              layout="fill"
+              objectFit="cover"
+              src="/images/mobile/banner.png"
+              alt="HDM Marketing services"
+              quality="100"
+            />
           </div>
 
-          <div className="">
-            <div className="mb-8">
-              <Image
-                width="107"
-                height="106"
-                src="/svg/step3.svg"
-                alt="left cube"
-              />
-              <Image
-                width="107"
-                height="106"
-                src="/svg/line.svg"
-                alt="left cube"
-              />
-            </div>
-
-            <p className="font-inter text-lg font-light text-white">
-              Front-end
-            </p>
+          {/* Mobile Cubes */}
+          <div className="absolute right-0 -top-12 lg:hidden">
+            <Image
+              width="107"
+              height="106"
+              src="/svg/right_cube.svg"
+              alt="Right cube"
+            />
           </div>
 
-          <div className="">
-            <div className="mb-8">
-              <Image
-                width="107"
-                height="106"
-                src="/svg/step4.svg"
-                alt="left cube"
-              />
-              <Image
-                width="107"
-                height="106"
-                src="/svg/line.svg"
-                alt="left cube"
-              />
-            </div>
-
-            <p className="font-inter text-lg font-light text-white">Back-end</p>
+          <div className="absolute left-0 -bottom-20 lg:hidden">
+            <Image
+              width="107"
+              height="106"
+              src="/svg/left_cube.svg"
+              alt="left cube"
+            />
           </div>
 
-          <div className="">
-            <div className="mb-8">
-              <Image
-                width="107"
-                height="106"
-                src="/svg/step5.svg"
-                alt="left cube"
-              />
-              <Image
-                width="107"
-                height="106"
-                src="/svg/line.svg"
-                alt="left cube"
-              />
-            </div>
-
-            <p className="font-inter text-lg font-light text-white">Testing</p>
+          <div className="absolute -bottom-12 right-28 hidden lg:block">
+            <Image
+              width="162"
+              height="140"
+              src="/images/right_cube.png"
+              alt="Right cube"
+            />
           </div>
 
-          <div className="">
-            <div className="mb-8">
-              <Image
-                width="107"
-                height="106"
-                src="/svg/step6.svg"
-                alt="left cube"
-              />
+          <div className="absolute left-52 -top-12 hidden lg:block">
+            <Image
+              width="107"
+              height="106"
+              src="/svg/left_cube.svg"
+              alt="left cube"
+            />
+          </div>
+          <div className="max-w-default z-50 mx-auto flex">
+            <div className="">
+              <div className="mb-8">
+                <Image
+                  width="107"
+                  height="106"
+                  src="/svg/step1.svg"
+                  alt="left cube"
+                />
+                <Image
+                  width="107"
+                  height="106"
+                  src="/svg/line.svg"
+                  alt="left cube"
+                />
+              </div>
+
+              <p className="font-inter text-lg font-light text-white">
+                Wireframing
+              </p>
             </div>
 
-            <p className="font-inter text-lg font-light text-white">
-              Maintenance
-            </p>
+            <div className="">
+              <div className="mb-8">
+                <Image
+                  width="107"
+                  height="106"
+                  src="/svg/step2.svg"
+                  alt="left cube"
+                />
+                <Image
+                  width="107"
+                  height="106"
+                  src="/svg/line.svg"
+                  alt="left cube"
+                />
+              </div>
+
+              <p className="font-inter text-lg font-light text-white">
+                UI/UX design
+              </p>
+            </div>
+
+            <div className="">
+              <div className="mb-8">
+                <Image
+                  width="107"
+                  height="106"
+                  src="/svg/step3.svg"
+                  alt="left cube"
+                />
+                <Image
+                  width="107"
+                  height="106"
+                  src="/svg/line.svg"
+                  alt="left cube"
+                />
+              </div>
+
+              <p className="font-inter text-lg font-light text-white">
+                Front-end
+              </p>
+            </div>
+
+            <div className="">
+              <div className="mb-8">
+                <Image
+                  width="107"
+                  height="106"
+                  src="/svg/step4.svg"
+                  alt="left cube"
+                />
+                <Image
+                  width="107"
+                  height="106"
+                  src="/svg/line.svg"
+                  alt="left cube"
+                />
+              </div>
+
+              <p className="font-inter text-lg font-light text-white">
+                Back-end
+              </p>
+            </div>
+
+            <div className="">
+              <div className="mb-8">
+                <Image
+                  width="107"
+                  height="106"
+                  src="/svg/step5.svg"
+                  alt="left cube"
+                />
+                <Image
+                  width="107"
+                  height="106"
+                  src="/svg/line.svg"
+                  alt="left cube"
+                />
+              </div>
+
+              <p className="font-inter text-lg font-light text-white">
+                Testing
+              </p>
+            </div>
+
+            <div className="">
+              <div className="mb-8">
+                <Image
+                  width="107"
+                  height="106"
+                  src="/svg/step6.svg"
+                  alt="left cube"
+                />
+              </div>
+
+              <p className="font-inter text-lg font-light text-white">
+                Maintenance
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Digital Marketing services. */}
-      <section className="max-w-default m-auto mb-20 flex justify-between">
+      <section className="max-w-default m-auto mb-20 flex w-4/5 justify-between">
         <div className="w-3/5">
           <Image
             width={585}
@@ -282,136 +288,138 @@ const Project: React.FC = () => {
       </section>
 
       {/* Stages */}
-      <section className="relative flex h-[660px] flex-col justify-center bg-cover lg:h-[610px]">
-        <h1 className="z-50 mb-16 text-center text-2xl font-bold text-white">
-          Stages
-        </h1>
+      <section className="relative flex h-[660px] bg-cover lg:h-[610px]">
+        <div className="max-w-default m-auto flex w-4/5 flex-col justify-center">
+          <h1 className="z-50 mb-16 text-center text-2xl font-bold text-white">
+            Stages
+          </h1>
 
-        <div className="hidden md:block">
-          <Image
-            layout="fill"
-            objectFit="cover"
-            src="/images/banner.png"
-            alt="HDM Marketing services"
-            quality="100"
-          />
-        </div>
-
-        <div className="md:hidden">
-          <Image
-            layout="fill"
-            objectFit="cover"
-            src="/images/mobile/banner.png"
-            alt="HDM Marketing services"
-            quality="100"
-          />
-        </div>
-
-        {/* Mobile Cubes */}
-        <div className="absolute right-0 -top-12 lg:hidden">
-          <Image
-            width="107"
-            height="106"
-            src="/svg/right_cube.svg"
-            alt="Right cube"
-          />
-        </div>
-
-        <div className="absolute left-0 -bottom-20 lg:hidden">
-          <Image
-            width="107"
-            height="106"
-            src="/svg/left_cube.svg"
-            alt="left cube"
-          />
-        </div>
-
-        <div className="absolute -bottom-12 right-28 hidden lg:block">
-          <Image
-            width="162"
-            height="140"
-            src="/images/right_cube.png"
-            alt="Right cube"
-          />
-        </div>
-
-        <div className="absolute left-52 -top-12 hidden lg:block">
-          <Image
-            width="107"
-            height="106"
-            src="/svg/left_cube.svg"
-            alt="left cube"
-          />
-        </div>
-        <div className="max-w-default z-50 mx-auto flex">
-          <div className="mr-4 w-1/4">
-            <div className="mb-8">
-              <Image
-                width="107"
-                height="106"
-                src="/svg/stage1.svg"
-                alt="left cube"
-              />
-            </div>
-
-            <p className="font-inter text-lg font-light text-white">
-              Take all available historical data and make the best use of it
-            </p>
+          <div className="hidden md:block">
+            <Image
+              layout="fill"
+              objectFit="cover"
+              src="/images/banner.png"
+              alt="HDM Marketing services"
+              quality="100"
+            />
           </div>
 
-          <div className="mr-4 w-1/4">
-            <div className="mb-8">
-              <Image
-                width="107"
-                height="106"
-                src="/svg/stage2.svg"
-                alt="left cube"
-              />
-            </div>
-
-            <p className="font-inter text-lg font-light text-white">
-              Build a way to store historical data in a more efficient way
-            </p>
+          <div className="md:hidden">
+            <Image
+              layout="fill"
+              objectFit="cover"
+              src="/images/mobile/banner.png"
+              alt="HDM Marketing services"
+              quality="100"
+            />
           </div>
 
-          <div className="mr-4 w-1/4">
-            <div className="mb-8">
-              <Image
-                width="107"
-                height="106"
-                src="/svg/stage3.svg"
-                alt="left cube"
-              />
-            </div>
-
-            <p className="font-inter text-lg font-light text-white">
-              Provide an API for internal and external use with an interface
-              according to business needs
-            </p>
+          {/* Mobile Cubes */}
+          <div className="absolute right-0 -top-12 lg:hidden">
+            <Image
+              width="107"
+              height="106"
+              src="/svg/right_cube.svg"
+              alt="Right cube"
+            />
           </div>
 
-          <div className="w-1/4">
-            <div className="mb-8">
-              <Image
-                width="107"
-                height="106"
-                src="/svg/stage4.svg"
-                alt="left cube"
-              />
+          <div className="absolute left-0 -bottom-20 lg:hidden">
+            <Image
+              width="107"
+              height="106"
+              src="/svg/left_cube.svg"
+              alt="left cube"
+            />
+          </div>
+
+          <div className="absolute -bottom-12 right-28 hidden lg:block">
+            <Image
+              width="162"
+              height="140"
+              src="/images/right_cube.png"
+              alt="Right cube"
+            />
+          </div>
+
+          <div className="absolute left-52 -top-12 hidden lg:block">
+            <Image
+              width="107"
+              height="106"
+              src="/svg/left_cube.svg"
+              alt="left cube"
+            />
+          </div>
+          <div className="max-w-default z-50 mx-auto flex">
+            <div className="mr-4 w-1/4">
+              <div className="mb-8">
+                <Image
+                  width="107"
+                  height="106"
+                  src="/svg/stage1.svg"
+                  alt="left cube"
+                />
+              </div>
+
+              <p className="font-inter text-lg font-light text-white">
+                Take all available historical data and make the best use of it
+              </p>
             </div>
 
-            <p className="font-inter text-lg font-light text-white">
-              Build an application whether it is a desktop, web app or a mobile
-              one
-            </p>
+            <div className="mr-4 w-1/4">
+              <div className="mb-8">
+                <Image
+                  width="107"
+                  height="106"
+                  src="/svg/stage2.svg"
+                  alt="left cube"
+                />
+              </div>
+
+              <p className="font-inter text-lg font-light text-white">
+                Build a way to store historical data in a more efficient way
+              </p>
+            </div>
+
+            <div className="mr-4 w-1/4">
+              <div className="mb-8">
+                <Image
+                  width="107"
+                  height="106"
+                  src="/svg/stage3.svg"
+                  alt="left cube"
+                />
+              </div>
+
+              <p className="font-inter text-lg font-light text-white">
+                Provide an API for internal and external use with an interface
+                according to business needs
+              </p>
+            </div>
+
+            <div className="w-1/4">
+              <div className="mb-8">
+                <Image
+                  width="107"
+                  height="106"
+                  src="/svg/stage4.svg"
+                  alt="left cube"
+                />
+              </div>
+
+              <p className="font-inter text-lg font-light text-white">
+                Build an application whether it is a desktop, web app or a
+                mobile one
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Results */}
-      <section>
-        <div className="relative -z-10 bg-[url('/images/background_portfolio2.png')] bg-cover pt-20">
-          <div className="max-w-default m-auto">
+      <section className="relative -z-10 bg-[url('/images/background_portfolio2.png')] bg-cover pt-20">
+        <div>
+          <div className="max-w-default m-auto w-4/5">
             <div>
               <Image
                 className="-z-10"
