@@ -57,7 +57,7 @@ const Modal: React.FC<myProps> = ({
       id="modal"
       className="absolute top-0 left-0 z-30 flex h-full w-full items-center justify-center"
     >
-      <div className="scrollbar-hide fixed top-0 bottom-0 right-0 left-0 overflow-y-scroll bg-white p-4 shadow-sm lg:relative lg:mt-0 lg:h-[750px] lg:w-[500px] lg:rounded-3xl">
+      <div className="scrollbar-hide fixed top-0 bottom-0 right-0 left-0 overflow-y-scroll bg-white p-4 shadow-sm lg:relative lg:mt-40 lg:h-[750px] lg:w-[500px] lg:rounded-3xl">
         <div className="flex justify-end text-lg">
           <button onClick={handleCloseClick}>
             <Image
