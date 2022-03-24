@@ -119,7 +119,7 @@ const Form: React.FC = () => {
       />
 
       <div className="flex justify-center">
-        <button className="bg-button rounded-2xl py-4 px-16 text-white">
+        <button className="bg-button rounded-2xl py-4 px-16 text-white transition-transform duration-300 hover:scale-110">
           Submit
         </button>
       </div>
