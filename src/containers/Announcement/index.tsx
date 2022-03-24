@@ -5,7 +5,7 @@ const Announcement: React.FC = () => {
   return (
     <section
       id="announcement"
-      className="relative flex h-[660px] items-center bg-cover lg:h-[450px]"
+      className="group relative flex h-[660px] items-center bg-cover lg:h-[450px]"
     >
       <div className="hidden md:block">
         <Image
@@ -59,17 +59,19 @@ const Announcement: React.FC = () => {
         />
       </div>
 
-      <div className="absolute -bottom-12 right-28 hidden lg:block">
+      <div className="absolute -bottom-16 right-28 hidden lg:block">
         <Image
           width="162"
           height="140"
           src="/images/right_cube.png"
+          className="transition-transform duration-1000 ease-in-out group-hover:-rotate-180"
           alt="Right cube"
         />
       </div>
 
       <div className="absolute left-52 -top-12 hidden lg:block">
         <Image
+          className="transition-transform duration-1000 ease-in-out group-hover:rotate-180"
           width="107"
           height="106"
           src="/svg/left_cube.svg"
@@ -77,7 +79,7 @@ const Announcement: React.FC = () => {
         />
       </div>
       <div className="z-50 mx-auto w-11/12">
-        <h1 className="mb-8 text-center text-[48px] font-medium leading-tight text-white">
+        <h1 className="hover mb-8 text-center text-[48px] font-medium leading-tight text-white">
           We share the things we like and the <br /> stuff that we are working
           on
         </h1>

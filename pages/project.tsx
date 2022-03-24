@@ -82,7 +82,7 @@ const Project: React.FC = () => {
       </section>
 
       {/* Project Lifecycle */}
-      <section className="relative mb-28 flex h-[660px] bg-cover lg:h-[450px]">
+      <section className="group relative mb-28 flex h-[660px] bg-cover lg:h-[450px]">
         <div className="max-w-default m-auto flex w-4/5">
           <div className="hidden md:block">
             <Image
@@ -128,6 +128,7 @@ const Project: React.FC = () => {
               width="162"
               height="140"
               src="/images/right_cube.png"
+              className="transition-transform duration-1000 ease-in-out group-hover:-rotate-180"
               alt="Right cube"
             />
           </div>
@@ -137,6 +138,7 @@ const Project: React.FC = () => {
               width="107"
               height="106"
               src="/svg/left_cube.svg"
+              className="transition-transform duration-1000 ease-in-out group-hover:-rotate-180"
               alt="left cube"
             />
           </div>
@@ -288,7 +290,7 @@ const Project: React.FC = () => {
       </section>
 
       {/* Stages */}
-      <section className="relative flex h-[660px] bg-cover lg:h-[610px]">
+      <section className="group relative flex h-[660px] bg-cover lg:h-[610px]">
         <div className="max-w-default m-auto flex w-4/5 flex-col justify-center">
           <h1 className="z-50 mb-16 text-center text-2xl font-bold text-white">
             Stages
@@ -338,6 +340,7 @@ const Project: React.FC = () => {
               width="162"
               height="140"
               src="/images/right_cube.png"
+              className="transition-transform duration-1000 ease-in-out group-hover:-rotate-180"
               alt="Right cube"
             />
           </div>
@@ -347,6 +350,7 @@ const Project: React.FC = () => {
               width="107"
               height="106"
               src="/svg/left_cube.svg"
+              className="transition-transform duration-1000 ease-in-out group-hover:-rotate-180"
               alt="left cube"
             />
           </div>
