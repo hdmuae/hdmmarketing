@@ -19,8 +19,8 @@ const style: React.CSSProperties = {
 
 interface HeaderProps {
   title: string;
-  variant: "horizontal" | "vertical";
   image: string;
+  variant: "horizontal" | "vertical";
 }
 
 const Header: React.FC<HeaderProps> = ({ title, variant, image }) => {
@@ -105,13 +105,13 @@ const Header: React.FC<HeaderProps> = ({ title, variant, image }) => {
           />
         </div>
         <section className="algin-center flex flex-col">
-          <h1 className="my-6 whitespace-pre-line text-center text-xl font-semibold leading-tight text-white lg:mt-32 lg:text-left lg:text-xl xl:text-2xl">
+          <h1 className="anim my-6 whitespace-pre-line text-center text-xl font-semibold leading-tight text-white lg:mt-32 lg:text-left lg:text-xl xl:text-2xl">
             {title}
           </h1>
 
           <If condition={variant === "vertical"}>
             <Then>
-              <p className="text-md mb-12 text-center text-white lg:text-left xl:text-lg">
+              <p className="anim text-md mb-12 text-center text-white lg:text-left xl:text-lg">
                 Digital marketing one stop solution that <br /> fits your
                 business.
               </p>

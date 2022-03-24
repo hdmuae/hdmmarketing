@@ -14,3 +14,16 @@
     @apply text-inherit outline-none;
   }
 }
+
+.anim {
+  -webkit-animation: fadein 3s linear 1 normal forwards;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

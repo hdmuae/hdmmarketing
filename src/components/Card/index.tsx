@@ -32,6 +32,7 @@ const Card: React.FC<CardProps> = ({
         >
           <div className="bg-lid bg-cover p-4">
             <Image
+              className="transition-transform duration-500 hover:scale-125"
               width="540"
               height="314"
               objectFit="cover"
